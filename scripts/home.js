@@ -99,6 +99,47 @@ classListNames.forEach(li => {
     }
 });
 
+
+const allButton = document.getElementById('all-button');
+const cseButton = document.getElementById('cse-button');
+const wddButton = document.getElementById('wdd-button');
+
+const classListItems = document.querySelectorAll('.class-names li');
+
+allButton.addEventListener("click", function(event) {
+    event.preventDefault();
+    showCourses("ALL");
+});
+
+cseButton.addEventListener("click", function(event) {
+    event.preventDefault();
+    showCourses("CSE");
+});
+
+wddButton.addEventListener("click", function(event) {
+    event.preventDefault();
+    showCourses("WDD");
+});
+
+function showCourses(subjectToShow) {
+    classListItems.forEach((listItem => {
+        const link = listItem.querySelector('a');
+        const courseText = link.textContent.trim();
+
+        if (subjectToShow === "ALL") {
+            listItem.style.display = "list-item";
+        }
+
+        else if (courseText.startsWith(subjectToShow)) {
+            listItem.style.display = "list-item";
+        }
+
+        else {
+            listItem.style.display = "none";
+        }
+    }));
+}
+
 //Footer Date Function
 const date = new Date();
 let year = date.getFullYear();

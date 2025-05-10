@@ -281,11 +281,11 @@ button {
     .navigation {
         position: absolute;
         right: -100%;
-        top: 60px;
+        top: 55px;
         gap: 0;
         flex-direction: column;
         background-color: var(--accent-1);
-        width: 25%;
+        width: 30%;
         text-align: center;
         transition: 0.3s;
         margin: 0;

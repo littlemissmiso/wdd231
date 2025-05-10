@@ -3,9 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 231 - Web Frontend Development</title>
+    <title>WDD 231 - Web Frontend Development | McKenna Johnson | Home Page Project</title>
+    <meta name="Description" content = "WDD 231 - Web Frontend Development 1. Personal Home Page project.">
+    <meta name="Author" content="McKenna Johnson">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/home-mobile.css">
+    <script src="scripts/home.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Faustina:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Hello there!</h1>
+    <header>
+        <img src="images/profile-img.jpg" alt="profile-img">
+        <span>McKenna Johnson</span>
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li><a href="">Home</a></li>
+            <li><a href="">Chamber</a></li>
+            <li><a href="">Final</a></li>
+            <li><a href="https://github.com/littlemissmiso">GitHub Profile</a></li>
+            <li><a href="https://www.linkedin.com/in/mckenna-johnson-123798161/">LinkedIn</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Home</h1>
+        <section class="course-work">
+            <h2>Course Work</h2>
+            <ul class="course-work list">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+        <section class="location-info">
+            <h2>Logan, Utah</h2>
+            <figure>
+                <img src="images/logan-temple.jpg" alt="Logan Utah Temple">
+                <figcaption>Aerial view of Logan LDS Temple.</figcaption>
+            </figure>   
+        </section>
+        <section class="certificate-info">
+            <h2>Web & Computer Programming Certificate</h2>
+            <ul class="class-group">
+                <li><a href="">All</a></li>
+                <li><a href="">CSE</a></li>
+                <li><a href="">WDD</a></li>
+            </ul>
+            <ul class="class-names">
+                <li><a href="">CSE 110</a></li>
+                <li><a href="">WDD 130</a></li>
+                <li><a href="">CSE 111</a></li>
+                <li><a href="">CSE 210</a></li>
+                <li><a href="">WDD 131</a></li>
+                <li><a href="">WDD 231</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <div class="footer name">
+            <p>&copy;<span id="year"></span>🐈 | McKenna Johnson -- Utah, USA | 🐈</p>
+        </div>
+        <div class="modified">
+            <p><span id=lastModified></span></p>
+        </div>
+    </footer>
 </body>
 </html>

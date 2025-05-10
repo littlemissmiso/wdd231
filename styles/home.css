@@ -38,6 +38,8 @@ h1 {
 section {
     box-shadow: rgb(28, 38, 48) 0px 20px 30px -10px;
     background-color: white;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
 }
 
 .course-work {
@@ -161,11 +163,11 @@ section {
 }
 
 .class-names li:nth-child(4) {
-    background-color: rgb(172, 111, 6);
+    background-color: rgb(175, 100, 2);
 }
 
 .class-names li:nth-child(6) {
-    background-color: rgb(172, 111, 6);
+    background-color: rgb(175, 100, 2);
 }
 
 .class-group a, .class-names a {
@@ -241,5 +243,114 @@ footer {
     font-family: var(--font-1);
     padding: 1rem;
     border-top: 1rem solid var(--color2);
+}
+
+#menu {
+    display: none;
+}
+
+button {
+    background-color: var(--heading-color);
+}
+
+
+
+@media screen and (max-width: 749px) {
+
+    #menu {
+        display: block;
+        font-size: 1.5rem;
+        border: 0;
+        background: none;
+        color: #ffffff;
+         position: absolute;
+        top: 1rem;
+        right: 1rem;
+        
+    }
+    
+    #menu::before {
+        content: "☰";
+        color: black;
+        background-color: white;
+        border-radius: 5px;
+        padding: 0.5px;
+        
+    }
+    
+    #menu.active::before {
+        content: "❌";
+    }
+    
+    .navigation {
+        position: absolute;
+        right: -100%;
+        top: 60px;
+        gap: 0;
+        flex-direction: column;
+        background-color: var(--accent-1);
+        width: 25%;
+        text-align: center;
+        transition: 0.3s;
+        margin: 0;
+        padding: 1rem;
+        border-radius: 5px;
+    
+    }
+    
+    .navigation a {
+        color: white;
+        font-family: var(--font-1);
+    }
+    
+    a:hover {
+        color: rgb(217, 196, 100);
+    }
+    
+    .navigation li {
+        padding: 1rem;
+    
+    }
+    
+    .navigation.active {
+        right: 0;
+    }
+
+    header img {
+        width: 30%;
+        height: auto;
+        margin-left: 1rem;
+        margin-bottom: 0;
+    }
+
+    header span {
+        font-size: clamp(35px, 3vw, 45px);
+        margin-left: 0;
+    }
+
+    main {
+        display: block;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 1rem;
+    }
+   
+    .certificate-info h2 {
+        font-size: 25px;
+    }
+    
+    .class-group li {
+        width: 80px;
+
+    }
+
+    .class-names {
+        display: block;
+    }
+    
+   
+
+
+
 }
 

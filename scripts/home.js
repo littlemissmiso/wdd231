@@ -88,57 +88,70 @@ const courses = [
 ]
 
 //Was SUPER stuck on this part, so had to get some AI assistance
-const classListNames = document.querySelectorAll('.class-names li');
-
-classListNames.forEach(li => {
-    const courseCode = li.textContent.trim();
-    const course = courses.find(c => `${c.subject} ${c.number}` === courseCode);
-
-    if (course && course.completed) {
-        li.classList.add('completed');
-    }
-});
 
 
+
+const classListSection = document.getElementById('classList');
+
+//Showing the courses
+function displayCourses(filter = "ALL") {
+    classListSection.innerHTML = "";
+
+    courses.forEach(course => {
+        if (filter === "ALL" || course.subject === filter) {
+            const li = document.createElement('li');
+            const span = document.createElement('span');
+            span.textContent = `${course.subject} ${course.number}`
+
+            if (course.completed) {
+                li.classList.add('completed'); 
+            }
+
+            li.appendChild(span);
+            classListSection.appendChild(li);
+        }
+    })
+
+    showCredits(filter);
+};
+
+displayCourses();
+showCredits();
+
+//Credit function
+function showCredits(filter="ALL") {
+    const creditSpan = document.querySelector("#creditCount span");
+    const totalCredits = courses.reduce((sum, course) => {
+        if ((filter === "ALL" || course.subject === filter) && course.completed) {
+            return sum + course.credits;
+        }
+        return sum;
+    }, 0);
+
+    creditSpan.textContent = totalCredits;
+}
+
+//Buttons & Event Listeners Section
 const allButton = document.getElementById('all-button');
 const cseButton = document.getElementById('cse-button');
 const wddButton = document.getElementById('wdd-button');
 
-const classListItems = document.querySelectorAll('.class-names li');
 
 allButton.addEventListener("click", function(event) {
     event.preventDefault();
-    showCourses("ALL");
+    displayCourses("ALL");  
 });
 
 cseButton.addEventListener("click", function(event) {
     event.preventDefault();
-    showCourses("CSE");
+    displayCourses("CSE");  
 });
 
 wddButton.addEventListener("click", function(event) {
     event.preventDefault();
-    showCourses("WDD");
+    displayCourses("WDD");
 });
 
-function showCourses(subjectToShow) {
-    classListItems.forEach((listItem => {
-        const link = listItem.querySelector('a');
-        const courseText = link.textContent.trim();
-
-        if (subjectToShow === "ALL") {
-            listItem.style.display = "list-item";
-        }
-
-        else if (courseText.startsWith(subjectToShow)) {
-            listItem.style.display = "list-item";
-        }
-
-        else {
-            listItem.style.display = "none";
-        }
-    }));
-}
 
 //Footer Date Function
 const date = new Date();

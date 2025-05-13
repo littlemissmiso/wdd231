@@ -7,6 +7,7 @@
     <meta name="Description" content = "WDD 231 - Web Frontend Development 1. Personal Home Page project.">
     <meta name="Author" content="McKenna Johnson">
     <link rel="stylesheet" href="styles/home.css">
+    <link rel="icon" href="images/favicon.ico">
     <script src="scripts/home.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,7 +21,7 @@
         <img src="images/profile-img.jpg" alt="profile-img">
         <span>McKenna Johnson</span>
     </header>
-    <button id="menu"></button>
+    <button id="menu" aria-label="Menu"></button>
     <nav>
         <ul class="navigation">
             <li><a href="">Home</a></li>
@@ -54,14 +55,11 @@
                 <li><a href="" id="cse-button">CSE</a></li>
                 <li><a href="" id="wdd-button">WDD</a></li>
             </ul>
-            <ul class="class-names" id="classList">
-                <li><a href="">CSE 110</a></li>
-                <li><a href="">WDD 130</a></li>
-                <li><a href="">CSE 111</a></li>
-                <li><a href="">CSE 210</a></li>
-                <li><a href="">WDD 131</a></li>
-                <li><a href="">WDD 231</a></li>
-            </ul>
+            <div class="credits" id="creditCount">
+                <p>Earned Credits: <span></span></p>
+            </div>
+            <ul class="class-names" id="classList"></ul>
+            
         </section>
     </main>
     <footer>

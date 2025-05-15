@@ -1,0 +1,24 @@
+{
+    "family_name" : "Miso",
+    "move_in_date" : "September 2024",
+    "members_in_family" : 3,
+    "bishopric_visit" : false,
+    "family_members" : [
+        {
+            "name" : "Max",
+            "gender" : "Male",
+            "birthdate" : "01-02-1991"
+        },
+        {
+            "name" : "LittleMiss",
+            "gender" : "Female",
+            "birthdate" : "02-03-1992"
+        },
+        {
+            "name" : "Pipsqueak",
+            "gender" : "Male",
+            "birthdate" : "03-04-2019"
+        }
+
+    ]
+}

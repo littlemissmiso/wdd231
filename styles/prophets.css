@@ -1,0 +1,58 @@
+:root {
+    --background-color: #E0DDCF;
+    --accent-1: #474448;
+    --accent-2: #2D232E;
+    --accent-3: #534B52;
+}
+
+* {
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+main {
+    background-color: var(--background-color);
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 1rem;
+    
+}
+
+h1 {
+    text-align: center;
+    background-color: var(--accent-1);
+    color: rgb(234, 219, 208);
+    padding: 1rem;
+    
+}
+
+h2 {
+   color: var(--accent-1); 
+}
+
+#cards {
+    display: grid;
+    grid-gap: 0.5rem;    
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+
+}
+
+section {
+	margin: 0.5rem;
+	padding: 0.5rem;
+	background-color: #eee;
+	border: 1px solid rgb(0 0 0 / 10%);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+img {
+	width: auto;
+	max-width: 325px;
+	box-shadow: 0 0 30px #777;
+	height: 200px;
+	border: 1px solid var(--accent-1);
+    margin: 0.5rem;
+}
+

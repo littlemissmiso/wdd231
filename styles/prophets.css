@@ -45,6 +45,7 @@ section {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+    border-radius: 15px;
 }
 
 img {
@@ -54,5 +55,6 @@ img {
 	height: 200px;
 	border: 1px solid var(--accent-1);
     margin: 0.5rem;
+    border-radius: 10px;
 }
 

@@ -3,6 +3,8 @@
     --accent-1: #474448;
     --accent-2: #2D232E;
     --accent-3: #534B52;
+    --font-1: "Faustina", serif;
+    --font-2: "Amatic SC", sans-serif;
 }
 
 * {
@@ -23,11 +25,17 @@ h1 {
     background-color: var(--accent-1);
     color: rgb(234, 219, 208);
     padding: 1rem;
+    font-family: var(--font-1);
     
 }
 
 h2 {
    color: var(--accent-1); 
+   font-family: (var(--font-1));
+}
+
+p {
+    font-family: var(--font-1);
 }
 
 #cards {

@@ -1,0 +1,96 @@
+{
+    
+    "members": [
+        {   
+        "name" : "Big Dill Pickle Co.",
+        "image" : "images/pickle-store.webp",
+        "address" : {
+            "street" : "475 Vinegar Street",
+            "city" : "Logan",
+            "state" : "Utah",
+            "zip" : "84321"
+            },
+        "phone" : "(489) 165-7984",
+        "website" : "https://thebigdillpickles.com",
+        "membership" : 2
+    },
+    {
+        "name": "Kneady Dough Bakery",
+        "image" : "images/kneady-store.webp",
+        "address": {
+            "street": "123 Crumb Lane",
+            "city": "Logan",
+            "state": "Utah",
+            "zip": "84321"
+            },
+        "phone": "(435) 555-0198",
+        "website": "https://kneadydoughbakery.com",
+        "membership": 1
+    },
+    {
+        "name": "Bored Games & Co.",
+        "image" : "images/bored-store.webp",
+            "address": {
+            "street": "88 Tabletop Trail",
+            "city": "Logan",
+            "state": "Utah",
+            "zip": "84321"
+            },
+        "phone": "(435) 242-7766",
+        "website": "https://boredgamesandco.com",
+        "membership": 3
+    },
+    {
+        "name": "Curl Up & Dye Salon",
+        "image" : "images/salon-store.webp",
+            "address": {
+            "street": "22 Shear Street",
+            "city": "Logan",
+            "state": "Utah",
+            "zip": "84321"
+            },
+        "phone": "(435) 987-3344",
+        "website": "https://curlupanddyeut.com",
+        "membership": 2
+    },
+    {
+        "name": "Holy Sheet Linens",
+        "image" : "images/linens-store.webp",
+            "address": {
+            "street": "704 Comfort Court",
+            "city": "Logan",
+            "state": "Utah",
+            "zip": "84321"
+            },
+        "phone": "(435) 222-9876",
+        "website": "https://holysheetlinens.com",
+        "membership": 3
+    },
+    {
+        "name": "The Codfather Fish & Chips",
+        "image" : "images/fish-store.webp",
+            "address": {
+            "street": "95 Ocean Avenue",
+            "city": "Logan",
+            "state": "Utah",
+            "zip": "84321"
+            },
+        "phone": "(435) 301-0070",
+        "website": "https://thecodfatherloganut.com",
+        "membership": 1
+    },
+    {
+        "name": "Grill Sergeant BBQ",
+        "image" : "images/bbq-store.webp",
+            "address": {
+            "street": "512 Smokehouse Road",
+            "city": "Logan",
+            "state": "Utah",
+            "zip": "84321"
+            },
+        "phone": "(435) 555-7272",
+        "website": "https://grillsergeantbbq.com",
+        "membership": 2
+    }
+    ]
+}

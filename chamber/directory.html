@@ -11,7 +11,7 @@
     <meta property="og:title" content="Chamber of Commerce Directory page.">
     <meta property="og:description" content="McKenna Johnson's BYU-Pathways WDD 231 class Chamber of Commerce project Directory page.">
     <meta property="og:image" content="https://ctfassets.ksldigital.com/0wjmk6wgfops/3aU0OZBGevf0bdu6sAP9L8/b99114d08a106a1955d8796a1dcc176c/_5d4fe265-c2bf-40e3-a447-51dc56323e30.4c7cf46732.jpg?w=1920&h=501&fit=fill&f=center&q=70">
-    <meta property="og:url" content="https://littlemissmiso.github.io/wdd231/directory.html">
+    <meta property="og:url" content="https://littlemissmiso.github.io/wdd231/chamber/directory.html">
     <link rel="icon" href="images/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,11 +22,12 @@
 </head>
 <body>
     <header>
-        <img src="images/chamber-logo-transparent.png" alt="chamberLogo">
+        <img src="images/chamber-logo-transparent.png" alt="chamberLogo" width="200" height="200">
         <div class="headerText">
-           <h1>Logan</h1>
+           <h1>Logan City</h1>
             <p>Chamber of Commerce</p> 
         </div>
+        <button id="menu" aria-label="Menu">☰</button>
         <nav>
             <ul class="navigation">
                 <li><a href="">Home</a></li>
@@ -36,12 +37,16 @@
                 <li><span> &#9681; </span></li>
             </ul>
         </nav>
-        
-
-    </header>
+     </header>
     <main>
-        <p>stuff here!</p>
-
+        <div class="heading-info">
+            <h2>Business Directory</h2>
+        </div>
+        <div class="menu">
+            <button id="grid">Grid View</button>
+            <button id="list">List View</button>
+        </div>
+        <div id="cards" class="grid-view"></div>
     </main>
     <footer>
         <div class="cityInfo">

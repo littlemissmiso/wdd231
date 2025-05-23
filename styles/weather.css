@@ -1,0 +1,22 @@
+main {
+    border: 1.5px solid rgb(179, 184, 188);
+    background-color: azure;
+    width: 50%;
+}
+
+main p {
+    text-align: center;
+    padding: 1rem
+}
+
+#current-temp {
+    color: rgb(27, 128, 51);
+    width: 100%;
+    
+}
+
+figure {
+    width: 100%;
+    text-align: center;
+    margin: 1rem auto;
+}

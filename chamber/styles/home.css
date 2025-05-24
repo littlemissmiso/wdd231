@@ -197,6 +197,22 @@ main {
 }
 
 
+.events h3 {
+    font-family: var(--second-font);
+    color: var(--color-2);
+}
+
+.events p {
+    font-family: var(--main-font);
+    color: var(--color-2);
+    padding-bottom: 1rem;
+}
+
+#event-details {
+    padding: 1rem;
+}
+
+
 .current-weather p {
     font-family: var(--main-font);
     text-align: center;
@@ -295,6 +311,76 @@ main {
    
 }
 
+.feature-heading h2 {
+    font-family: var(--second-font);
+    color: var(--color-2);
+    font-size: clamp(20px, 28px, 35px);
+    width: 100%;
+    border-bottom: 2px dotted var(--color-2);
+    padding-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
+    margin-top: 3rem;
+    
+}
+
+#cards {
+    display: grid;
+    grid-gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    text-align: left;
+    padding-top: 1rem;
+    padding-bottom: 4rem;
+}
+
+.business-cards section {
+	background-color: #d6d6cc;
+	border: 1px solid rgb(0 0 0 / 10%);
+	display: grid;
+	flex-direction: column;
+	align-items: flex-start;
+    text-align: left;
+    width: 100%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;    
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+#cards section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    min-height: 220px;
+}
+
+#cards section h2 {
+    background-color:#394a44 ;
+    color: var(--color-4);
+    width: 100%;
+    padding: 0.5rem;
+    font-family: var(--second-font);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+
+}
+
+#cards section p {
+    text-align: left;
+    width: 100%;
+    padding: 0.5rem;
+    font-family: var(--main-font);
+    border: 1px solid #bdbcbb;
+    padding-left: 1rem;
+    
+}
+
+#cards section img {
+    width: 85%;
+    height: auto;
+    align-self: center ;
+    padding: 0.5rem;
+}
+
 
 footer {
     display: grid;
@@ -379,6 +465,22 @@ button {
     li span {
         justify-content: center;
         margin: 0.25rem;
+    }
+
+    #events-and-weather {
+        display: block;
+    }
+
+    .events {
+        margin-bottom: 1.5rem;
+    }
+
+    .current-weather {
+        margin-bottom: 1.5rem;
+    }
+
+    .keynote-link {
+        font-size: medium;
     }
 
 
@@ -478,6 +580,23 @@ button {
     
     .navigation.active {
         right: 0;
+    }
+
+    .keynote-link {
+        font-size: small;
+        padding: 0.75rem;
+    }
+
+    #events-and-weather {
+        display: block;
+    }
+
+    .events {
+        margin-bottom: 1.5rem;
+    }
+
+    .current-weather {
+        margin-bottom: 1.5rem;
     }
 
     footer {

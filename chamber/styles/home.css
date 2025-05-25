@@ -493,7 +493,13 @@ button {
     }
 
     body {
-        position: relative
+        position: relative;
+        overflow-x: hidden;
+    }
+
+    main {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
     }
 
     header {
@@ -588,7 +594,8 @@ button {
     }
 
     #events-and-weather {
-        display: block;
+        grid-template-columns: 1fr;
+        padding: 0;
     }
 
     .events {
@@ -613,6 +620,17 @@ button {
     .authorInfo h2, .authorInfo p {
         text-align: center;
     }
+
+    #cards {
+        display: block;
+        max-width: 100%;
+    }
+
+    #cards section {
+        margin-top: 1.5rem;
+    }
+
+
 
      
 

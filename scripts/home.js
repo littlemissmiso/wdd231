@@ -106,6 +106,10 @@ function displayCourses(filter = "ALL") {
             if (course.completed) {
                 li.classList.add('completed'); 
             }
+            
+            li.addEventListener('click', () => {
+            displayCourseDetails(course);
+        });
 
             li.appendChild(span);
             classListSection.appendChild(li);
@@ -117,6 +121,8 @@ function displayCourses(filter = "ALL") {
 
 displayCourses();
 showCredits();
+
+
 
 //Credit function
 function showCredits(filter="ALL") {
@@ -131,6 +137,26 @@ function showCredits(filter="ALL") {
     creditSpan.textContent = totalCredits;
 }
 
+const courseDetails = document.getElementById('course-details');
+
+function displayCourseDetails(course) {
+    courseDetails.innerHTML = "";
+    courseDetails.innerHTML = `
+        <button id="closeModal">❌</button>
+        <h2>${course.subject} ${course.number}</h2>
+        <h3>${course.title}</h3>
+        <p><strong>Credits</strong>: ${course.credits}</p>
+        <p>${course.description}</p>
+        <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>
+        `;
+        courseDetails.showModal();
+
+        closeModal.addEventListener("click", () => {
+            courseDetails.close();
+        });
+
+        
+    }
 //Buttons & Event Listeners Section
 const allButton = document.getElementById('all-button');
 const cseButton = document.getElementById('cse-button');
@@ -151,6 +177,10 @@ wddButton.addEventListener("click", function(event) {
     event.preventDefault();
     displayCourses("WDD");
 });
+
+courseDetails.addEventListener("click", function(event) {
+    event.preventDefault();
+})
 
 
 //Footer Date Function

@@ -181,7 +181,7 @@ main {
     right: 5%;
     text-decoration: none;
     font-weight: 600;
-    color: var(--color-2);
+    /* color: var(--color-2);
     font-family: var(--second-font);
     background-color: rgb(210, 154, 12);
     padding: 1rem;
@@ -189,11 +189,34 @@ main {
     padding-left: 2rem;
     font-size: clamp(12px, 18px, 24px);
     border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
+
+    align-items: center;
+    background-image: radial-gradient(100% 100% at 100% 0, #e5b74b 0, #b87919  100%);
+    border: 0;
+    cursor: pointer;
+    border-radius: 6px;
+    box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: var(--color-2);
+    display: inline-flex;
+    font-family: var(--main-font);
+    justify-content: center;
+    padding: 0.75rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s,transform .15s;
+    will-change: box-shadow,transform;
+
 }
 
 .keynote-link:hover {
-    background-color: rgb(234, 192, 87);
+    /* background-color: rgb(234, 192, 87); */
+
+    box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #e6c692 0 -3px 0 inset;
+    transform: translateY(-2px);
 }
 
 

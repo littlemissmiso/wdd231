@@ -39,7 +39,85 @@
         </nav>
      </header>
     <main>
-        
+        <form method="get" action="thankyou.html" class="cf1">
+            <fieldset>
+                <h2>Join Logan Chamber</h2>
+            </fieldset>
+            <fieldset>
+                <div class="fullName">
+                    <h3>Applicant Info</h3>
+                    <label for="first-name">First Name
+                        <input type="text" name="first-name" id="first-name" required title="Enter your first name" autocomplete="given-name">
+                    </label>    
+                    <label for="last-name">Last Name
+                        <input type="text" name="last-name" id="last-name" required title="Enter your last name" autocomplete="family-name">
+                    </label>    
+                    <label for="title">Position Title
+                        <input type="text" name="organizational-title" id="organizational-title" required title="Enter your position title" autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}">
+                    </label>
+                    </div>
+                <div class="contactInfo">
+                    <h3>Contact Info</h3>
+                    <label for="email">Email Address
+                        <input type="email" name="email-address" id="email-address" required title="Enter your email" autocomplete="email" placeholder="youremail@email.com">
+                    </label>
+                    <label for="phone">Phone Number
+                        <input type="tel" name="phone-number" id="phone-number" required title="Enter your phone number" autocomplete="tel">
+                    </label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <div class="business">
+                    <h3>Business Info</h3>
+                    <label for="businessName">Business/Organization Name
+                        <input type="text" name="business-name" id="business-name" required title="Enter the name of your business" autocomplete="organization">
+                    </label>    
+                    <label for="membershipLevel">Membership Level
+                        <select name="membership" id="membership" required>
+                        <option value="" disabled selected>Select membership...</option>
+                        <option value="np">NP Membership</option>
+                        <option value="bronze">Bronze Membership</option>
+                        <option value="silver">Silver Membership</option>
+                        <option value="gold">Gold Membership</option>
+                        </select>
+                    </label>    
+                    <label for="businessDescription">Business Description
+                        <textarea name="business-description" id="business-description" rows="2" cols="50" title="Describe your business/organization"></textarea>
+                    </label>    
+                </div>
+            </fieldset>
+            <input type="submit" value="Send Application">
+            <input type="hidden" name="timestamp" id="timestamp">
+        </form>
+        <section class="membership-cards">
+            <h2>Membership Levels</h2>
+            <div class="np-card">
+                <h3>NP (Non-Profit) Membership</h3>
+                <button class="learn-button" data-key="np">See Details</button>
+            </div>
+            <div class="bronze-card">
+                <h3>Bronze Membership</h3>
+                <button class="learn-button" data-key="bronze">See Details</button>
+            </div>
+            <div class="silver-card">
+                <h3>Silver Membership</h3>
+                <button class="learn-button" data-key="silver">See Details</button>
+            </div>
+            <div class="gold-card">
+                <h3>Gold Membership</h3>
+                <button class="learn-button" data-key="gold">See Details</button>
+            </div>
+            <dialog id="membership-info">
+                <div class="modal">
+                    <div class="modal-header">
+                        <h3 id="modal-title"></h3>  
+                        <button id="close-modal">❌</button>
+                    </div>
+                    <p id="modal-description"></p>
+                    <p id="yearly-fees"></p> 
+                </div>
+            </dialog>
+        </section>
     </main>
     <footer>
         <div class="cityInfo">

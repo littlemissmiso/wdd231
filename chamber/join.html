@@ -40,9 +40,7 @@
      </header>
     <main>
         <form method="get" action="thankyou.html" class="cf1">
-            <fieldset>
-                <h2>Join Logan Chamber</h2>
-            </fieldset>
+            <h2>Join Logan Chamber</h2>
             <fieldset>
                 <div class="fullName">
                     <h3>Applicant Info</h3>
@@ -53,16 +51,16 @@
                         <input type="text" name="last-name" id="last-name" required title="Enter your last name" autocomplete="family-name">
                     </label>    
                     <label for="title">Position Title
-                        <input type="text" name="organizational-title" id="organizational-title" required title="Enter your position title" autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}">
+                        <input type="text" name="organizational-title" id="title" required title="Enter your position title" autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}" placeholder="Senior Manager">
                     </label>
                     </div>
                 <div class="contactInfo">
                     <h3>Contact Info</h3>
                     <label for="email">Email Address
-                        <input type="email" name="email-address" id="email-address" required title="Enter your email" autocomplete="email" placeholder="youremail@email.com">
+                        <input type="email" name="email-address" id="email" required title="Enter your email" autocomplete="email" placeholder="youremail@email.com">
                     </label>
                     <label for="phone">Phone Number
-                        <input type="tel" name="phone-number" id="phone-number" required title="Enter your phone number" autocomplete="tel">
+                        <input type="tel" name="phone-number" id="phone" required title="Enter your phone number" autocomplete="tel" placeholder="(123) 456-7890">
                     </label>
                 </div>
             </fieldset>
@@ -70,10 +68,10 @@
                 <div class="business">
                     <h3>Business Info</h3>
                     <label for="businessName">Business/Organization Name
-                        <input type="text" name="business-name" id="business-name" required title="Enter the name of your business" autocomplete="organization">
+                        <input type="text" name="business-name" id="businessName" required title="Enter the name of your business" autocomplete="organization">
                     </label>    
                     <label for="membershipLevel">Membership Level
-                        <select name="membership" id="membership" required>
+                        <select name="membership" id="membershipLevel" required>
                         <option value="" disabled selected>Select membership...</option>
                         <option value="np">NP Membership</option>
                         <option value="bronze">Bronze Membership</option>
@@ -82,12 +80,15 @@
                         </select>
                     </label>    
                     <label for="businessDescription">Business Description
-                        <textarea name="business-description" id="business-description" rows="2" cols="50" title="Describe your business/organization"></textarea>
+                        <textarea name="business-description" id="businessDescription" rows="2" cols="50" title="Describe your business/organization"></textarea>
                     </label>    
                 </div>
             </fieldset>
-            <input type="submit" value="Send Application">
-            <input type="hidden" name="timestamp" id="timestamp">
+            <fieldset>
+                <input type="submit" value="Send Application">
+                <input type="hidden" name="timestamp" id="timestamp">
+            </fieldset>
+            
         </form>
         <section class="membership-cards">
             <h2>Membership Levels</h2>
@@ -110,7 +111,7 @@
             <dialog id="membership-info">
                 <div class="modal">
                     <div class="modal-header">
-                        <h3 id="modal-title"></h3>  
+                        <h3 id="modal-title">""</h3>  
                         <button id="close-modal">❌</button>
                     </div>
                     <p id="modal-description"></p>

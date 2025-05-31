@@ -22,6 +22,7 @@ body {
     max-width: 1800px;
     width: 100%;
     overflow-x: hidden;
+    
 }
 
 
@@ -122,226 +123,49 @@ main {
     padding-top: 0.5rem;
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
-    grid-gap: 5rem;
+    height: 100%;
 }
 
 
-form {
-    width: 100%;
+.confirmation {
     grid-column: 2/3;
-    margin-top: 2rem;
-    margin-bottom: 3.5rem;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-
-}
-
-fieldset {
-    background-color: #d6d6cc;
-    border: none;
-    padding: 0;
-}
-
-form h2 {
-    background-color:#394a44;
-    color: var(--color-4);
-    width: 100%;
-    padding: 0.5rem;
-    font-family: var(--second-font);
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
-    text-align: center;
-}
-
-.fullName, .contactInfo, .business {
-    display: grid;
-    grid-template-columns: 1fr;
-    padding: 1rem;
-    border-top: 1px dotted var(--color-3);
-}
-
-.fullName h3, .contactInfo h3, .business h3 {
-    font-family: var(--second-font);
-}
-
-.fullName label, .contactInfo label, .business label {
-    font-family: var(--main-font);
-}
-
-.business textarea {
-    width: 100%;
-    height: 150px;
-    font-size: 12px;
-    border: none;
-    margin-bottom: 1rem;
-}
-
-
-label[for="membershipLevel"] select {
-    width: 100%;
-    padding: 0.5rem;
-    border: none;
-    margin-bottom: 1rem;
-}
-
-
-label[for="businessName"] input {
-    width: 100%;
-    padding: 0.5rem;
-    border: none;
-    margin-bottom: 1rem;
-}
-
-label[for="first-name"] input, label[for="last-name"] input, label[for="title"] input {
-    width: 100%;
-    padding: 0.5rem;
-    border: none;
-    margin-bottom: 1rem;
-}
-
-label[for="email"] input, label[for="phone"] input {
-    width: 100%;
-    padding: 0.5rem;
-    border: none;
-    margin-bottom: 1rem;
-}
-
-label[for="first-name"], label[for="email"], label[for="businessName"] {
-    margin-top: 1rem;
-}
-
-form input[type="submit"] {
-    border: none;
-    background-color: rgb(68, 93, 65);
-    color: #fff;
-    font-size: 18px;
-    border-radius: 6px;
-    padding: .8rem;
-    width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-bottom: 1rem;
-    box-shadow: 1px 1px 4px #999;
-    cursor: pointer;
-}
-
-@keyframes fadeSlideUp {
-    0% {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-.membership-cards {
-    animation: fadeSlideUp 1s ease-out both;
-    align-content: center;
-}
-
-.membership-cards h2 {
-    text-align: center;
-    font-family: var(--second-font);
-    font-size: clamp(20px, 32px, 40px);
-    color: var(--color-2);
-    margin-bottom: 0.5rem;
-    padding-bottom: 0.5rem;
-    border-bottom: 2px dotted #3a4d46;
-}
-
-.np-card, .bronze-card, .silver-card, .gold-card {
-    background-color: #d6d6cc;
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-    text-align: left;
-    width: 100%;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;    
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-    margin-bottom: 1.5rem;
-}
-
-.np-card h3, .bronze-card h3, .silver-card h3, .gold-card h3 {
-    background-color:#394a44;
-    color: var(--color-4);
-    width: 100%;
-    padding: 0.5rem;
-    font-family: var(--second-font);
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
-}
-
-.np-card button, .bronze-card button, .silver-card button, .gold-card button {
-    all: unset;
-    align-self: center;
-    align-items: center;
-    background-image: radial-gradient(100% 100% at 100% 0, #e5b74b 0, #b87919  100%);
-    border: 0;
-    cursor: pointer;
-    border-radius: 30px;
-    box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
-    box-sizing: border-box;
-    color: var(--color-2);
-    display: inline-flex;
-    font-family: var(--main-font);
-    justify-content: center;
-    padding: 0.75rem;
-    padding-right: 2rem;
-    padding-left: 2rem;
-    position: relative;
-    text-align: left;
-    text-decoration: none;
-    transition: box-shadow .15s,transform .15s;
-    will-change: box-shadow,transform;
-    margin: 1rem;
-    font-weight: 600;
-}
-
-.np-card button:hover, .bronze-card button:hover, .silver-card button:hover, .gold-card button:hover {
-    box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #e6c692 0 -3px 0 inset;
-    transform: translateY(-2px);
-}
-
-#membership-info {
     background-color: var(--color-4);
-    width: 50%;
-    margin: 0 auto;
-    top: 20%;
-    border-radius: 10px;
-    border: 3px solid var(--color-2);
+    margin-bottom: 4rem;
+    margin-top: 2rem;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+
 }
 
-dialog::backdrop {
-    background-color: #00212b6a;
+.confirmation h2 {
+    background-color:#394a44;
+    color: var(--color-4);
+    width: 100%;
+    padding: 0.5rem;
+    font-family: var(--second-font);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    text-align: center;
 }
 
-.modal-header {
-    display: flex;
-    justify-content: space-between;
+.thanks-message p {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    font-style: italic;
+}
+.confirmation h3 {
+    margin-left: 1rem;
+    font-family: var(--second-font);
     color: var(--color-2);
 }
 
-.modal-header button {
-    all: unset;
-    cursor: pointer;
-}
-
-.modal h3 {
-    font-family: var(--second-font);
-    font-size: larger;
-}
-
-.modal p {
+.confirmation p {
     font-family: var(--main-font);
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    
+    margin-left: 1rem;
 }
     
-
-
-
 footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -429,14 +253,19 @@ button {
 
     main {
         display: grid;
-        grid-template-columns: 2fr 1fr;
+        grid-template-columns: .1fr 2fr .1fr;
         grid-gap: 2rem;
     }
 
-    form {
-        grid-column: 1/2;
+    .thanks-message p {
+        margin-left: 0;
     }
 
+    #results {
+        padding-bottom: 2rem;
+    }
+
+    
 
 }
 
@@ -457,25 +286,13 @@ button {
         display: block;
     }
 
-    .membership-cards h2 {
-        color: var(--color-4);
-        border: none;
-    }
-
-    #membership-info {
-        width: 80%;
-    }
-
-    header {
-        padding-bottom: 0.5rem;
-    }
-
-    
+        
     header {
         background-color: var(--color-3);
         display: grid;
         grid-template-columns: 55px auto 75px;
         grid-gap: 0;
+        padding-bottom: 0.5rem;
     }
     
     header img {
@@ -552,6 +369,9 @@ button {
         right: 0;
     }
 
+    #results {
+        padding-bottom: 2rem;
+    }
 
     footer {
         display: block;

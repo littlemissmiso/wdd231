@@ -1,0 +1,101 @@
+{
+    
+    "locations": [
+        {   
+        "name" : "Old Main",
+        "image" : "images/old-main.webp",
+        "address" : {
+            "street" : "Old Main Hill",
+            "city" : "Logan",
+            "state" : "Utah",
+            "zip" : "84322"
+            },
+        "description" : "Old Main is the iconic centerpiece of Utah State University, perched on the hill with its recognizable bell tower. Built in 1890, it is the oldest building on campus and serves as a symbol of Aggie pride. The building houses administrative offices and classrooms, and its tower chimes are a familiar sound in Logan.",
+        "website" : "https://www.usu.edu/advancement/named-spaces/logan/old-main"
+    },
+        {   
+        "name" : "Logan Tabernacle",
+        "image" : "images/tabernacle.webp",
+        "address" : {
+            "street" : "50 N Main St.",
+            "city" : "Logan",
+            "state" : "Utah",
+            "zip" : "84321"
+            },
+        "description" : "Located in the heart of downtown, the Logan Tabernacle is a historic building owned by The Church of Jesus Christ of Latter-day Saints. Built in the late 1800s, it features striking pioneer-era architecture and hosts free concerts and community events. It's a peaceful spot that reflects Logan’s rich heritage.",
+        "website" : "https://en.wikipedia.org/wiki/Logan_Tabernacle"
+    },
+    {   
+        "name" : "Laub Plaza",
+        "image" : "images/laub-plaza.webp",
+        "address" : {
+            "street" : "55 N Main St.",
+            "city" : "Logan",
+            "state" : "Utah",
+            "zip" : "84321"
+            },
+        "description" : "Laub Plaza is a welcoming green space on the Utah State University campus, often used for student gatherings, outdoor performances, and relaxation. It features shady trees, seating areas, and views of campus landmarks. The plaza is named in honor of a former university president.",
+        "website" : "https://www.loganutah.gov/government/departments/parks_and_recreation/carol_and_jim_laub_plaza/index.php"
+    },
+    {   
+        "name" : "Logan Utah Temple",
+        "image" : "images/logan-temple2.webp",
+        "address" : {
+            "street" : "175 N 300 E",
+            "city" : "Logan",
+            "state" : "Utah",
+            "zip" : "84321"
+            },
+        "description" : "The Logan Utah Temple is a striking white granite structure set against the Cache Valley mountains. Completed in 1884, it was the second temple built by The Church of Jesus Christ of Latter-day Saints in Utah. Its beautiful gardens and hilltop location make it a spiritual and visual landmark.",
+        "website" : "https://www.churchofjesuschrist.org/temples/details/logan-utah-temple?lang=eng"
+    },
+    {   
+        "name" : "Beaver Mountain",
+        "image" : "images/beaver-mountain.webp",
+        "address" : {
+            "street" : "40000 E Highway 89",
+            "city" : "Logan",
+            "state" : "Utah",
+            "zip" : "84322"
+            },
+        "description" : "Just outside Logan, Beaver Mountain is a locally beloved ski resort known for its family-friendly atmosphere and affordable winter fun. In summer, it offers hiking, mountain biking, and scenic views of the Bear River Mountains. It’s a year-round destination for outdoor recreation.",
+        "website" : "https://www.skithebeav.com/"
+    },
+    {   
+        "name" : "Bear Lake State Park",
+        "image" : "images/bear-lake.webp",
+        "address" : {
+            "street" : "940 N Bear Lake Blvd",
+            "city" : "Garden City",
+            "state" : "Utah",
+            "zip" : "84028"
+            },
+        "description" : "Nicknamed the “Caribbean of the Rockies,” Bear Lake boasts bright turquoise waters that span the Utah-Idaho border. It’s a popular spot for boating, swimming, and relaxing on the beach. The area is also famous for raspberry shakes and scenic drives.",
+        "website" : "https://stateparks.utah.gov/parks/bear-lake/"
+    },
+    {   
+        "name" : "First Dam",
+        "image" : "images/first-dam.webp",
+        "address" : {
+            "street" : "1798 Canyon Rd",
+            "city" : "Logan",
+            "state" : "Utah",
+            "zip" : "84321"
+            },
+        "description" : "Located at the mouth of Logan Canyon, First Dam is a quiet reservoir perfect for picnicking, paddleboarding, and feeding ducks. Surrounded by tall trees and mountain views, it’s a peaceful retreat just minutes from downtown. It’s also a favorite fishing spot for locals.",
+        "website" : "https://bearriverheritage.com/item/first-dam/"
+    },
+    {   
+        "name" : "Aggie Ice Cream",
+        "image" : "images/aggie-ice-cream.webp",
+        "address" : {
+            "street" : "750 N 1200 E",
+            "city" : "Logan",
+            "state" : "Utah",
+            "zip" : "84322"
+            },
+        "description" : "Aggie Ice Cream is a beloved Utah State University tradition, serving handcrafted ice cream made by students in the dairy science program. Founded in 1922, it offers classic and unique flavors made from local milk. It’s a must-try treat when visiting Logan.",
+        "website" : "https://www.usu.edu/aggieicecream/"
+    }
+    ]
+}

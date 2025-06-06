@@ -24,9 +24,6 @@ body {
     overflow-x: hidden;
 }
 
-
-
-
 header {
     background-color: var(--color-3);
     display: grid;
@@ -116,11 +113,28 @@ main {
     background-size: cover;       
     background-repeat: no-repeat; 
     background-position: center;  
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
     padding-top: 0.5rem;
-    
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: 0.35fr 2fr;
 }
+
+.sidebar {
+    font-family: var(--second-font);
+    margin-top: 1.5rem;
+    background-color: #daa207; 
+    height: 250px;
+    text-align: center;
+    align-content: center;
+    color: var(--color-2);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    border-radius: 30px;
+    font-size: larger;
+    padding: 1rem;
+}
+
 
 #cards {
     display: grid;
@@ -191,7 +205,16 @@ main {
     width: 100%;
     height: auto;
     align-self: center;
+    transition: all 0.3s ease;
 }
+
+
+#cards section img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(213, 174, 3, 0.687);
+}
+
+
 
 #cards button {
     all: unset;
@@ -288,21 +311,76 @@ footer {
 
 
 
-@media screen and (max-width: 1250px) and (min-width: 815px) {
-    .navigation {
+@media screen and (max-width: 1200px) and (min-width: 640px) {
+    #menu {
         display: block;
-        margin-top: 1.5rem;
-        text-align: right;
+        font-size: 2.5rem;
+        border: 0;
+        box-shadow: none;
+        background: none;
+        color: var(--color-2);
+        position: absolute;
+        right: 1rem;
+        padding-top: 1rem;
+        
         
     }
-
+    
+    .navigation {
+        position: absolute;
+        right: -100%;
+        top: 62px;
+        gap: 0;
+        flex-direction: column;
+        background-color: var(--color-2);
+        width: 30%;
+        text-align: center;
+        transition: 0.3s;
+        margin: 0;
+        padding: 1rem;
+        border-radius: 5px;
+        z-index: 10;
+    
+    }
+    
+    .navigation li span {
+        display: block;
+        width: 100%;
+        text-align: center;
+        font-size: 30px;
+        color: var(--color-4);
+    }
+    
+    .navigation a {
+        color: white;
+        font-family: var(--font-1);
+        font-size: clamp(14px, 3vw, 18px);
+    }
+    
+    .navigation a:hover {
+        color: rgb(156, 187, 144);
+    }
+    
     .navigation li {
-        padding: .25rem;
-        margin-right: 1.5rem;
+        padding: 1rem;
+        text-align: center;
+        width: 100%;
+    
+    }
+    
+    .navigation.active {
+        right: 0;
     }
 
-    .navigation a {
-        font-size: 20px;
+    header {
+        padding-bottom: 1rem;
+    }
+
+    header img {
+        width: 125px;
+        height: 125px;
+        align-self: center;
+        padding: 0;
     }
 
     li span {
@@ -314,6 +392,11 @@ footer {
         grid-template-columns: 1fr;
         width: auto;
         
+    }
+
+    #cards section img:hover {
+    transform: none !important;
+    box-shadow: none !important;
     }
 
     #cards section {
@@ -360,11 +443,14 @@ footer {
         justify-self: center; 
         width: 60%;
     }
-        
-
+      
+    main {
+        grid-gap: 0.5rem;
+    }
+    
 }
 
-@media screen and (max-width: 814px) {
+@media screen and (min-width: 319px) and (max-width: 640px) {
 
     html, body {
         overflow-x: hidden;
@@ -468,15 +554,30 @@ footer {
         right: 0;
     }
 
+    .sidebar {
+        height: 50px;
+    }
+
     #cards {
         grid-template-columns: 1fr;
         width: auto;
+        padding-bottom: 1rem;
         
     }
 
     #cards section img {
         max-width: 400px;
         margin: 0 auto;
+        transform: none !important;
+        box-shadow: none !important;
+    }
+    }
+
+    #cards button {
+        width: 60%;
+        margin: 0 auto;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
     }
 
     .location-description {

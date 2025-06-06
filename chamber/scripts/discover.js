@@ -62,6 +62,36 @@ async function getData() {
     displayLocations(data.locations);
 }
 
+const sidebar = document.querySelector('.sidebar');
+const sec_per_day = 1000 * 60 * 60 * 24;
+const lastVisit = localStorage.getItem('lastVisit');
+const now = Date.now();
+
+let message = '';
+
+if (!lastVisit) {
+    message = "Welcome! We hope you find something fun to do and see in Logan!";
+}
+else {
+    const daysDifference = Math.floor((now - Number(lastVisit)) / sec_per_day);
+    
+    if (daysDifference < 1) {
+        message = "Welcome back!";
+    }
+    else if (daysDifference === 1) {
+    message = "You last visited 1 day ago.";
+    }
+    else {
+        message = `You last visited ${daysDifference} days ago.`;
+    }
+}
+
+if (sidebar) {
+    sidebar.textContent = message;
+}
+
+localStorage.setItem('lastVisit', now);
+
 getData();
 
 //Footer Date Function

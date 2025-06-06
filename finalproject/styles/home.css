@@ -9,14 +9,42 @@
     --third-font: "Young Serif", serif;
 }
 
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    max-width: 1800px;
+    width: 100%;
+    overflow-x: hidden;
+}
+
 header h1 {
     font-family: var(--first-font);
+    color: #deded7;
+    background-color: var(--color-dark-red);
 }
 
 main h2 {
     font-family: var(--second-font);
+    background-color: var(--color-dark);
+    color: var(--color-yellow);
 }
 
 main p {
     font-family: var(--third-font);
+    background-color: var(--color-brown);
+    color: #deded7;
+}
+
+footer {
+    background-color: #420e07;
+    color: #deded7;
 }

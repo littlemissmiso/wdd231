@@ -555,7 +555,7 @@ footer {
     }
 
     .sidebar {
-        height: 50px;
+        height: 100px;
     }
 
     #cards {
@@ -571,7 +571,7 @@ footer {
         transform: none !important;
         box-shadow: none !important;
     }
-    }
+    
 
     #cards button {
         width: 60%;
@@ -592,14 +592,14 @@ footer {
         
     }
 
-    
+}  
 
 
 
      
 
 
-} 
+
     
 
 

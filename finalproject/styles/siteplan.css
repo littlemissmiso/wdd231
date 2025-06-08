@@ -1,0 +1,192 @@
+:root {
+    --color-red: #810000;
+    --color-dark-red: #420e07;
+    --color-dark-green: #002907;
+    --color-yellow: #ec8f00;
+    --color-brown: #292929;
+    --color-cream: #deded7;
+    --first-font: "Bellefair", serif;
+    --second-font: "Allura", sans-serif;
+    --third-font: "Young Serif", serif;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    max-width: 1800px;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: var(--color-dark-red);
+    display: block;
+    text-align: center;
+    padding-top: 1.5rem;
+    border-bottom: 5px solid var(--color-red);
+}
+
+header h1 {
+    font-family: var(--first-font);
+    color: var(--color-cream);
+}
+
+header p {
+    color: var(--color-cream);
+    font-family: var(--second-font);
+    font-size: 20px;
+}
+
+.title p {
+    font-family: var(--first-font);
+    font-size: 25px;
+    padding: 1rem;
+    background-color: var(--color-dark-green);
+    color: var(--color-yellow);
+    margin-left: 25%;
+    margin-right: 25%;
+    border-radius: 20px;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+main {
+    background-color: var(--color-dark-green);
+    padding: 3rem;
+}
+
+main h2 {
+    font-family: var(--first-font);
+    color: var(--color-yellow);
+    padding-bottom: 0.5rem;
+}
+
+main p {
+    font-family: var(--third-font);
+    color: #deded7;
+}
+
+.description-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1.5rem;
+}
+
+.site-name, .site-purpose, .site-scenarios {
+    background-color: #01430c;
+    border: 8px solid #01380a;
+    padding: 1.5rem;  
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.site-name h3, .site-purpose h3, .site-scenarios h3 {
+    font-family: var(--first-font);
+    color: var(--color-cream);
+}
+
+.site-name p, .site-purpose p, .site-scenarios p {
+    font-family: var(--first-font);
+    padding-top: 0.5rem;
+    color: var(--color-cream);
+}
+
+.colors-and-fonts {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding-top: 1.5rem;
+    grid-gap: 1.5rem;
+}
+
+#color-numbers {
+    background-color: #01430c;
+    border: 8px solid #01380a;
+    padding: 1.5rem;  
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#color-numbers p {
+    font-family: var(--first-font);
+    padding: 0.2rem;
+    color: var(--color-cream);
+    font-size: 16px;
+}
+
+.color-scheme h3 {
+    padding-bottom: 0.5rem;
+    font-family: var(--first-font);
+    color: var(--color-cream);
+}
+
+.color-scheme img {
+    border: 2px solid var(--color-cream);
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+
+.typography {
+    background-color: #01430c;
+    border: 8px solid #01380a;
+    padding: 1.5rem;  
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.typography h3 {
+    font-family: var(--first-font);
+    color: var(--color-cream);
+    padding-bottom: 1rem;
+}
+
+.typography p {
+    font-family: var(--first-font);
+    padding: 0.75rem;
+}
+
+.typography p span {
+    margin-top: 1rem;
+    font-family: var(--first-font);
+    padding-top: 0.5rem;
+    color: var(--color-cream);
+    font-size: 25px;
+}
+
+.font-1 p span {
+    font-family: var(--first-font);
+}
+
+.font-2 p span {
+    font-family: var(--second-font);
+}
+
+.font-3 p span {
+    font-family: var(--third-font);
+}
+
+.wireframe img {
+    width: 60%;
+    display: block;
+    margin: auto;
+    margin-top: 3rem;
+}
+
+footer {
+    background-color: #420e07;
+    color: #deded7;
+    padding: 2rem;
+    text-align: center;
+    font-family: var(--third-font);
+}

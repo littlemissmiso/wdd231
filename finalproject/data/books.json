@@ -1,0 +1,166 @@
+{
+  "books": [
+    {
+      "name": "The Stand-In",
+      "image": "images/stand‑in.webp",
+      "author": "Lily Chu",
+      "genre": "Romance",
+      "description": "Gracie Reed, fresh from losing her job and struggling to care for her mother, is plunged into glamour when she's mistaken for Chinese star Wei Fangli. As a stand‑in, she navigates luxury, growing attraction to Fangli's co-star Sam, and discovers her own strength, identity, and heart.",
+      "review": "⭐⭐⭐⭐",
+      "purchaselink": "https://www.amazon.com/Stand-Lily-Chu/dp/1728242622"
+    },
+    {
+      "name": "Everything All At Once",
+      "image": "images/everything.webp",
+      "author": "Katrina Leno",
+      "genre": "Coming-of-Age",
+      "description": "Lottie Reaves is anxious and risk‑averse until her beloved Aunt Helen dies, leaving behind 24 mysterious letters. Each one challenges her to face fear, grieve, and live boldly. Along the way, she discovers family secrets, friendship, love, and the profound power of stories.",
+      "review": "⭐⭐⭐⭐",
+      "purchaselink": "https://www.amazon.com/Everything-All-Once-Katrina-Leno/dp/0062493094"
+    },
+    {
+      "name": "Warcross",
+      "image": "images/warcross.webp",
+      "author": "Marie Lu",
+      "genre": "Science Fiction",
+      "description": "Teen hacker Emika Chen scrapes by hunting cheaters in the VR sensation Warcross—until her rogue hack into the world championships makes her an unexpected star. Recruited by creator Hideo Tanaka to spy on the tournament, she uncovers a dangerous conspiracy, forcing her to choose whom to trust.",
+      "review": "⭐⭐⭐⭐⭐",
+      "purchaselink": "https://www.amazon.com/Warcross-Marie-Lu/dp/0399547967"
+    },
+    {
+      "name": "Wildcard",
+      "image": "images/wildcard.webp",
+      "author": "Marie Lu",
+      "genre": "Science Fiction",
+      "description": "Emika Chen survives the Warcross finale, only to uncover Hideo’s dangerous NeuroLink algorithm. With a bounty on her head, she allies with Zero and the Blackcoats in neon‑lit Tokyo. Trust shattered and freedom at stake, Emika risks everything—including love—to stop a looming tech‑controlled future.",
+      "review": "⭐⭐⭐⭐⭐",
+      "purchaselink": "https://www.amazon.com/Wildcard-Warcross-Marie-Lu/dp/0399547991"
+    },
+    {
+      "name": "Renegades",
+      "image": "images/renegades.webp",
+      "author": "Marissa Meyer",
+      "genre": "Fantasy",
+      "description": "Nova is a gifted anarchist with a grudge against the Renegades—superheroes who promised peace but failed her. Disguised, she infiltrates their ranks to bring them down from within. But as secrets unravel and loyalties blur, Nova must decide where her true allegiance lies—in vengeance or hope.",
+      "review": "⭐⭐⭐",
+      "purchaselink": "https://www.amazon.com/Renegades-Marissa-Meyer/dp/1250044669"
+    },
+    {
+      "name": "Aurora Rising",
+      "image": "images/aurorarising.webp",
+      "author": "Amie Kaufman | Jay Kristoff",
+      "genre": "Science Fiction",
+      "description": "In 2380, misfit cadet Tyler and his squad—including the legendary Aurora—are thrown into a galaxy-threatening mission. Battling deadly forces and unraveling conspiracies, they must learn to trust each other to survive. Friendship, sacrifice, and destiny collide in this thrilling sci-fi adventure among the stars.",
+      "review": "⭐⭐⭐⭐⭐",
+      "purchaselink": "https://www.amazon.com/Aurora-Rising-Cycle-Amie-Kaufman/dp/1524720968"
+    },
+    {
+      "name": "Aurora Burning",
+      "image": "images/auroraburning.webp",
+      "author": "Amie Kaufman | Jay Kristoff",
+      "genre": "Science Fiction",
+      "description": "The squad faces new dangers across the galaxy as secrets and betrayals surface. Tyler and Aurora must confront their pasts and unite to stop a deadly threat. With high stakes, fierce loyalty, and unexpected alliances, their fight for survival becomes a battle for the universe’s future.",
+      "review": "⭐⭐⭐⭐⭐",
+      "purchaselink": "https://www.amazon.com/Aurora-Burning-Cycle-Amie-Kaufman/dp/1524720925"
+    },
+    {
+      "name": "Aurora's End",
+      "image": "images/aurorasend.webp",
+      "author": "Amie Kaufman | Jay Kristoff",
+      "genre": "Science Fiction",
+      "description": "The epic conclusion finds Tyler, Aurora, and their crew facing their most perilous mission yet. As alliances shatter and enemies close in, they must make impossible choices to save humanity. Love, sacrifice, and destiny intertwine in this thrilling finale to the Aurora Cycle trilogy.",
+      "review": "⭐⭐⭐⭐⭐",
+      "purchaselink": "https://www.amazon.com/Auroras-Aurora-Cycle-Amie-Kaufman/dp/1524720887"
+    },
+    {
+      "name": "The Nature of Small Birds",
+      "image": "images/smallbirds.webp",
+      "author": "Susie Finkbeiner",
+      "genre": "Historical Fiction",
+      "description": "Told through three timelines, this heartfelt story follows a family shaped by the adoption of a Vietnamese daughter after the war. It's a gentle, uplifting look at love, belonging, and the quiet strength of family over decades.",
+      "review": "⭐⭐⭐⭐",
+      "purchaselink": "https://www.amazon.com/Nature-Small-Birds-Susie-Finkbeiner/dp/0800739344"
+    },
+    {
+      "name": "To All the Boys I’ve Loved Before",
+      "image": "images/toalltheboys.webp",
+      "author": "Jenny Han",
+      "genre": "Romance",
+      "description": "When Lara Jean’s secret love letters are unexpectedly sent out, her quiet high school life turns upside down. This sweet and wholesome teen romance explores first love, family, and growing up with humor and heart.",
+      "review": "⭐⭐⭐⭐",
+      "purchaselink": "https://www.amazon.com/All-Boys-Ive-Loved-Before/dp/1442426705"
+    },
+    {
+      "name": "The Guernsey Literary and Potato Peel Pie Society",
+      "image": "images/guernsey.webp",
+      "author": "Mary Ann Shaffer & Annie Barrows",
+      "genre": "Historical Fiction",
+      "description": "Set just after WWII, a writer discovers a quirky book club on Guernsey Island. Through letters, she uncovers their stories of wartime survival and love. Warm, witty, and full of charm—with clean content and rich emotion.",
+      "review": "⭐⭐⭐⭐⭐",
+      "purchaselink": "https://www.amazon.com/Guernsey-Literary-Potato-Peel-Society/dp/0385341008"
+    },
+    {
+      "name": "The Bookshop on the Corner",
+      "image": "images/bookshopcorner.webp",
+      "author": "Jenny Colgan",
+      "genre": "Casual Read",
+      "description": "After losing her job, Nina moves to a small Scottish village and opens a traveling bookshop. With gentle romance, bookish joy, and small-town charm, this is a cozy, clean read perfect for bibliophiles.",
+      "review": "⭐⭐⭐⭐",
+      "purchaselink": "https://www.amazon.com/Bookshop-Corner-Novel-Jenny-Colgan/dp/0062467255"
+    },
+    {
+      "name": "A Man Called Ove",
+      "image": "images/ove.webp",
+      "author": "Fredrik Backman",
+      "genre": "Casual Fiction",
+      "description": "Grumpy, rule-obsessed Ove finds unexpected friendship in his lively new neighbors. Heartwarming and often hilarious, this international favorite explores grief, connection, and the power of kindness—with mild language but otherwise clean content.",
+      "review": "⭐⭐⭐⭐⭐",
+      "purchaselink": "https://www.amazon.com/Man-Called-Ove-Novel/dp/1476738025"
+    },
+    {
+      "name": "The Two Lives of Lydia Bird",
+      "image": "images/lydiabird.webp",
+      "author": "Josie Silver",
+      "genre": "Romance",
+      "description": "After her fiancé’s death, Lydia wakes up in an alternate life where he’s still alive. A poignant and gentle love story about grief, healing, and moving on—with emotion but little to no explicit content.",
+      "review": "⭐⭐⭐⭐",
+      "purchaselink": "https://www.amazon.com/Two-Lives-Lydia-Bird-Novel/dp/0593135232"
+    },
+    {
+      "name": "The Hiding Place",
+      "image": "images/hidingplace.webp",
+      "author": "Corrie ten Boom",
+      "genre": "Historical / Memoir",
+      "description": "Corrie ten Boom's true story of courage and faith during WWII is a moving account of sacrifice and forgiveness. This Christian memoir is clean, powerful, and inspiring for readers of all ages.",
+      "review": "⭐⭐⭐⭐⭐",
+      "purchaselink": "https://www.amazon.com/Hiding-Place-Corrie-ten-Boom/dp/0553256696"
+    },
+    {
+      "name": "Atomic Habits",
+      "image": "images/atomichabits.webp",
+      "author": "James Clear",
+      "genre": "Self-Help",
+      "description": "This practical guide to habit change explains how small daily actions create big results. It's clean, motivational, and full of real-life examples for building a better life without burnout.",
+      "review": "⭐⭐⭐⭐⭐",
+      "purchaselink": "https://www.amazon.com/Atomic-Habits-Proven-Build-Break/dp/0735211299"
+    },
+    {
+      "name": "The Magnolia Story",
+      "image": "images/magnoliastory.webp",
+      "author": "Chip and Joanna Gaines",
+      "genre": "Memoir / Self-Help",
+      "description": "HGTV stars Chip and Joanna Gaines share their journey of marriage, business, faith, and family. Told with humor and warmth, this clean, heartfelt memoir inspires with its simplicity and grit.",
+      "review": "⭐⭐⭐⭐",
+      "purchaselink": "https://www.amazon.com/Magnolia-Story-Chip-Gaines/dp/0718079183"
+    },
+    {
+      "name": "The Secret Garden",
+      "image": "images/secretgarden.webp",
+      "author": "Frances Hodgson Burnett",
+      "genre": "Classic / Historical",
+      "description": "After tragedy, spoiled Mary Lennox discovers a neglected garden and a new way of living. This classic story of renewal and kindness remains beloved for its clean storytelling and hopeful themes.",
+      "review": "⭐⭐⭐⭐⭐",
+      "purchaselink": "https://www.amazon.com/Secret-Garden-Frances-Hodgson-Burnett/dp/006440188X"
+    }
+  ]
+}

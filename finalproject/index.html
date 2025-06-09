@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project Home Page</title>
+    <meta name="description" content="This is the Final Project Home page for McKenna Johnson's WDD 231 class. ">
+    <meta name="author" content="McKenna Johnson">
+    <link rel="stylesheet" href="styles/home.css">
+    <script src="scripts/home.js" defer></script>
+    <meta property="og:title" content="Final Project Home page.">
+    <meta property="og:description" content="McKenna Johnson's BYU-Pathways WDD 231 class Final Project Home page.">
+    <meta property="og:image" content="https://unsplash.com/photos/a-wooden-table-with-a-book-on-it-in-front-of-a-bookshelf--sbSAIZDB5E">
+    <meta property="og:url" content="https://littlemissmiso.github.io/wdd231/finalproject/index.html">
+    <link rel="icon" href="images/misofavicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Bellefair&family=Young+Serif&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <button id="menu" aria-label="Menu">☰</button>
+        <img src="images/logo.png" alt="logo-image">
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html" class="active">HOME</a></li>
+                <li><a href="">BOOK REVIEWS</a></li>
+                <li><a href="">ABOUT ME</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="personal-intro">
+            <h2>Hello There!</h2>
+
+            <img src="images/littlemissmiso2.webp" alt="littlemissmiso-image">
+            <p>Description here</p>
+            
+        </div>
+        <div class="book-cards">
+            <h2>Featured Books</h2>
+            <div id="cards" class="grid-view"></div>
+        </div>
+           
+    </main>
+    <footer>
+        <div class="footer-logo">
+            <img src="images/logo-small.png" alt="small-logo">
+        </div>
+        <div class="socialMedia">
+            <a href="https://youtube.com">
+                <img src="images/youtube.png" alt="Youtube" class="youtube-logo">
+            </a>
+            <a href="https://twitter.com">
+                <img src="images/twitter.png" alt="Twitter" class="twitter-logo">
+            </a>
+            <a href="https://instagram.com">
+                <img src="images/instagram.png" alt="Instagram" class="instagram-logo">
+            </a>
+        </div>
+        <div class="authorInfo">
+            <h2>WDD 231 Class Final Project</h2>
+            <p>Author: McKenna Johnson</p>
+            <p>&copy;<span id="year"></span> The Literary Loft with Little Miss Miso</p>
+            <div class="modified">
+                <p>Last modification: <span id=lastModified></span></p>
+            </div>
+        </div>
+        
+    </footer>
+</body>
+</html>

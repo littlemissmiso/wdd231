@@ -47,12 +47,21 @@ main {
     background-color: #374834;
     padding-left: 8%;
     padding-right: 8%;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-gap: 1.5rem;
     
 }
 
+.top-section {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 1.5rem;
+}
+
+.middle-section {
+    margin-top: 1.5rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 1.5rem;
+}
 
 .navigation {
     position: absolute;
@@ -67,6 +76,8 @@ main {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     box-shadow: rgb(51, 25, 47) 0px -10px 20px -10px;
+    justify-content: center;
+    justify-content: space-around;
 }
 
 .navigation li {
@@ -224,12 +235,13 @@ main {
     display: grid;
     justify-items: center;
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     background-color: #1c241a;
     padding-bottom: 2rem;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
+    height: 100%;
 }
 
 #cards section h2 {
@@ -259,6 +271,10 @@ main {
     align-items: flex-end;
 }
 
+.book-quote {
+    height: 100%;
+}
+
 #quote {
     position: relative;
     font-family: var(--first-font);
@@ -270,7 +286,6 @@ main {
 #quote h2 {
     position: relative;
     color: var(--color-yellow);
-    font-size: 2.8rem;
     font-weight: normal;
     line-height: 1;
     margin: 0;
@@ -278,6 +293,7 @@ main {
     border: solid 2px;
     border-radius:20px;
     padding: 25px;
+    font-size: clamp(1.2rem, 6vw, 2.5rem);
 }
 
 #quote h2:after {
@@ -302,14 +318,7 @@ main {
     bottom: -3px;
     left: 50px;
     z-index: 2;
-}
-
-@media all and (min-width: 600px) {
-    #quote h2 {
-        font-size: 2rem;
-        line-height: 1.2;
-   }
-
+    
 }
 
 #quote p {
@@ -334,35 +343,136 @@ main {
   margin-left:-12px;
 }
 
-#review {
-    background-color: var(--color-cream);
+.genres h2 {
+    text-align: center;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    padding: 1rem 1.5rem;
+    color: var(--color-cream);
+    font-family: var(--third-font);
+    text-align: center;
+    font-size: 35px;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+             0px 8px 13px rgba(0,0,0,0.1),
+             0px 18px 23px rgba(0,0,0,0.1);
+    letter-spacing: 6px;
+    margin-top: 1.5rem;
+}
+.genres {
+    grid-column: 1 / -1;
+    justify-self: center;
+    padding-bottom: 2rem;
+    background-color: rgba(0, 0, 0, 0.216);
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+
+.genre-cards {
+    margin: 0 auto;
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-areas: 
-    "title1 title1"
-    "smalltitle button"
-    "author button";
-    align-items: start;
-    grid-gap: 1rem;
-    padding: 1rem;
-    border-radius: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+}
+
+
+.romance button, .coming-of-age button, .science-fiction button, .fantasy button, .historical-fiction button, .casual-read button, .self-help button, .classic button {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    font-family: var(--first-font);
+    text-wrap: wrap;
+    border: none;
+    margin: 0.5rem;
+    cursor: pointer;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-size: 0;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border: 2px solid var(--color-cream);
+    margin-bottom: 0.5rem;
+    
 }
 
-#review h2 {
-    grid-area: title1;
+.casual-read button {
+    background-image: url('../images/casualread.webp');
+    
 }
 
-#review h3 {
-    grid-area: smalltitle;
+.classic button {
+    background-image: url('../images/classics.webp');
+    
 }
 
-#review p {
-    grid-area: author;
+.coming-of-age button {
+    background-image: url('../images/comingofage2.webp');
+   
 }
 
-#review a {
-    grid-area: button;
+.fantasy button {
+    background-image: url('../images/fantasy.webp');
+    
+}
+
+.historical-fiction button {
+    background-image: url('../images/historical.webp');
+    
+}
+
+.historical-fiction button {
+    background-image: url('../images/historical.webp');
+    
+}
+
+.romance button {
+    background-image: url('../images/romance.webp');
+}
+
+.science-fiction button {
+    background-image: url('../images/sciencefiction.webp');
+}
+
+.self-help button {
+    background-image: url('../images/selfhelp.webp');
+}
+
+#genre-info {
+    background-color: var(--color-cream);
+    width: 50%;
+    margin: 0 auto;
+    top: 20%;
+    border-radius: 10px;
+    border: 3px solid var(--color-brown);
+}
+
+dialog::backdrop {
+    background-color: #171f166a;
+}
+
+.modal-header {
+    font-family: var(--second-font);
+    display: flex;
+    justify-content: space-between;
+    color: var(--color-red);
+    font-size: 30px;
+}
+
+.modal-header button {
+    all: unset;
+    cursor: pointer;
+}
+
+.modal p {
+    font-family: var(--first-font);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 18px;
+    
+}
+
+.modal li {
+    font-family: var(--first-font);
 }
 
 footer {

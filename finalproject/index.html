@@ -7,6 +7,7 @@
     <meta name="description" content="This is the Final Project Home page for McKenna Johnson's WDD 231 class. ">
     <meta name="author" content="McKenna Johnson">
     <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/mediumhome.css">
     <script src="scripts/home.js" defer></script>
     <meta property="og:title" content="Final Project Home page.">
     <meta property="og:description" content="McKenna Johnson's BYU-Pathways WDD 231 class Final Project Home page.">
@@ -30,38 +31,76 @@
         </nav>
     </header>
     <main>
-        <div class="personal-intro">
-            <h2>Hello There!</h2>
-            <img src="images/littlemissmiso2.webp" alt="littlemissmiso-image">
-            <p>I'm Little Miss Miso—book lover, cat cuddler, science enthusiast and travel dreamer. Whether it's a cozy mystery, swoony romance, or far-off fantasy, I’m here to share honest reviews and bookish joy. Grab your favorite mug and stay awhile—let’s get lost in stories together!</p>
-            <section id="signature">
-               <img src="images/signature.webp" alt="signature"> 
-            </section>
+        <div class="top-section">
+            <div class="personal-intro">
+                <h2>Hello There!</h2>
+                <img src="images/littlemissmiso2.webp" alt="littlemissmiso-image">
+                <p>I'm Little Miss Miso—book lover, cat cuddler, science enthusiast and travel dreamer. Whether it's a cozy mystery, swoony romance, or far-off fantasy, I’m here to share honest reviews and bookish joy. Grab your favorite mug and stay awhile—let’s get lost in stories together!</p>
+                <section id="signature">
+                    <img src="images/signature.webp" alt="signature"> 
+                </section>
+            </div>
+            <div class="current-read">
+                <h2>What am I reading now?</h2>
+                <img src="images/ove.webp">
+                <p>Grumpy, rule-obsessed Ove finds unexpected friendship in his lively new neighbors. Heartwarming and often hilarious, this international favorite explores grief, connection, and the power of kindness—with mild language but otherwise clean content.</p>
+            </div>
         </div>
-        <div class="current-read">
-            <h2>What am I reading now?</h2>
-            <img src="images/ove.webp">
-            <p>Grumpy, rule-obsessed Ove finds unexpected friendship in his lively new neighbors. Heartwarming and often hilarious, this international favorite explores grief, connection, and the power of kindness—with mild language but otherwise clean content.</p>
-        </div>
-        <div class="book-cards">
+        <div class="middle-section">
+            <div class="book-cards">
             <h2>FEATURED BOOKS</h2>
             <div id="cards" class="grid-view"></div>
         </div>
-        <div class="review-and-book-quote">
+        <div class="book-quote">
             <section id="quote">
                 <h2>“Books can make you live a thousand different lifetimes, a thousand different lives. Books make you immortal.”</h2>
                 <p>- Katrina Leno<br><span>Everything All At Once</span></p>
             </section>
-            <section id="review">
-                <h2>Featured Review</h2>
-                <section id="review-info">
-                   <h3>The Stand-In</h3>
-                    <p>by Lily Chu</p> 
-                </section>    
-                    <a href="review.html" class="review-link">Read More</a>
-            </section>
-            
         </div>
+        </div>
+        <div class="bottom-section">
+            <div class="genres">
+            <h2> ⟫ CHOOSE YOUR GENRE ⟪ </h2>
+            <section class="genre-cards">
+                
+                <div class="romance">
+                    <button class="learn-button" data-key="romance">ROMANCE</button>
+                </div>
+                <div class="coming-of-age">
+                    <button class="learn-button" data-key="coming">COMING-OF-AGE</button>
+                </div>
+                <div class="science-fiction">
+                    <button class="learn-button" data-key="science">SCIENCE FICTION</button>
+                </div>
+                <div class="fantasy">
+                    <button class="learn-button" data-key="fantasy">FANTASY</button>
+                </div>
+                <div class="historical-fiction">
+                    <button class="learn-button" data-key="historical">HISTORICAL FICTION</button>
+                </div>
+                <div class="casual-read">
+                    <button class="learn-button" data-key="casual">CASUAL READ</button>
+                </div>
+                <div class="self-help">
+                    <button class="learn-button" data-key="selfhelp">SELF HELP</button>
+                </div>
+                <div class="classic">
+                    <button class="learn-button" data-key="classic">CLASSICS</button>
+                </div>
+                <dialog id="genre-info">
+                    <div class="modal">
+                        <div class="modal-header">
+                            <h3 id="modal-title">""</h3>  
+                            <button id="close-modal">❌</button>
+                        </div>
+                        <p id="modal-description"></p>
+                        <ul id="modal-book-list"></ul>
+                    </div>
+                </dialog>
+            </section>
+        </div>
+        </div>
+        
            
     </main>
     <footer>

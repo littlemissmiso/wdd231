@@ -1,7 +1,7 @@
 :root {
     --color-red: #810000;
     --color-dark-red: #420e07;
-    --color-dark-green: #002907;
+    --color-dark-green: #374834;
     --color-yellow: #ec8f00;
     --color-brown: #292929;
     --color-cream: #deded7;
@@ -45,10 +45,12 @@ header img {
 
 main {
     background-color: #374834;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 8%;
+    padding-right: 8%;
     display: grid;
     grid-template-columns: 2fr 1fr;
+    grid-gap: 1.5rem;
+    
 }
 
 
@@ -59,7 +61,7 @@ main {
     transform: translateX(-50%);
     display: flex;
     gap: 1rem; 
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 2rem;
     margin: 0;
     background-color: var(--color-red);
     border-top-left-radius: 10px;
@@ -73,7 +75,7 @@ main {
 
 
 .navigation a {
-    font-size: 22px;
+    font-size: clamp(0.5vw, 1.75vw, 3rem);
     text-decoration: none;
     list-style: none;
     font-family: var(--first-font);
@@ -103,7 +105,264 @@ main {
 .personal-intro {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    border: 1px solid pink;
+    grid-template-areas: 
+    "image title"
+    "image description"
+    "image signature";
+    align-items: start;
+    margin-top: 2.5rem;
+    grid-gap: 1rem;
+    background-color: var(--color-cream);
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.personal-intro h2 {
+    grid-area: title;
+    text-align: left;
+    font-family: var(--second-font);
+    font-size: 30px;
+    padding-top: 1rem;
+}
+
+.personal-intro img {
+    grid-area: image;
+    justify-self: center; 
+    align-self: center;
+    border: 3px solid var(--color-brown);
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.personal-intro p {
+    font-size: 16px;
+    grid-area: description;
+    font-family: var(--first-font);
+}
+
+#signature {
+    justify-self: end;
+}
+
+#signature img {
+    grid-area: signature;
+    width: 150px;
+    height: auto;
+    margin-right: 3rem;
+    border: none;
+    box-shadow: none;
+    
+}
+
+.current-read {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "image title"
+    "image description";
+    align-items: start;
+    grid-gap: 1rem;
+    margin-top: 2.5rem;
+    background-color: var(--color-cream);
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.current-read h2 {
+    grid-area: title;
+    text-align: center;
+    font-family: var(--third-font);
+    font-size: 18px;
+}
+
+.current-read img {
+    grid-area: image;
+    width: 140px;
+    height: auto;
+    justify-self: center; 
+    align-self: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.current-read p {
+    grid-area: description;
+    font-family: var(--first-font);
+}
+
+.book-cards div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1.5rem;
+}
+
+.book-cards h2 {
+    background-color: var(--color-yellow);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    padding: 1rem 1.5rem;
+    color: var(--color-brown);
+    font-family: var(--third-font);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 25px;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+             0px 8px 13px rgba(0,0,0,0.1),
+             0px 18px 23px rgba(0,0,0,0.1);
+    letter-spacing: 6px;
+}
+
+.book-cards p {
+    text-align: center;
+}
+
+
+
+#cards section {
+    display: grid;
+    justify-items: center;
+    text-align: center;
+    margin-bottom: 2rem;
+    background-color: #1c241a;
+    padding-bottom: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+#cards section h2 {
+    background-color: transparent;
+    width: 100%;
+    padding: 0.5rem;
+    box-shadow: none;
+    color: var(--color-cream);
+    font-size: 18px;
+    text-shadow: none;
+    letter-spacing: 0;
+    border-radius: 0;
+    
+}
+
+#cards section p {
+    font-family: var(--first-font);
+    color: var(--color-cream);
+}
+
+.book-cards img {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    height: 275px;
+    margin-top: 1.5rem;
+    justify-self: center; 
+    align-self: center;
+    align-items: flex-end;
+}
+
+#quote {
+    position: relative;
+    font-family: var(--first-font);
+    max-width: 620px;
+    margin: 2.5rem auto;
+    align-self: center;
+}
+
+#quote h2 {
+    position: relative;
+    color: var(--color-yellow);
+    font-size: 2.8rem;
+    font-weight: normal;
+    line-height: 1;
+    margin: 0;
+    border: 2px solid #fff;
+    border: solid 2px;
+    border-radius:20px;
+    padding: 25px;
+}
+
+#quote h2:after {
+    content:"";
+    position: absolute;
+    border: 2px solid var(--color-yellow);
+    border-radius: 0 100% 0 0;
+    width: 60px;
+    height: 60px;
+    bottom: -62px;
+    left: 50px;
+    border-bottom: none;
+    border-left: none;
+    z-index: 3; 
+}
+
+#quote h2:before {
+    content:"";
+    position: absolute;
+    width: 80px;
+    border: 6px solid var(--color-dark-green);
+    bottom: -3px;
+    left: 50px;
+    z-index: 2;
+}
+
+@media all and (min-width: 600px) {
+    #quote h2 {
+        font-size: 2rem;
+        line-height: 1.2;
+   }
+
+}
+
+#quote p {
+    position: relative;
+    color: #ffffff;
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 1.2;
+    margin: 0;
+    padding-top: 15px;
+    z-index: 1;
+    margin-left:150px;
+    padding-left:12px;
+}
+
+#quote p span {
+    font-style: italic;
+    font-size: 18px;
+}
+
+#quote p:first-letter {
+  margin-left:-12px;
+}
+
+#review {
+    background-color: var(--color-cream);
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: 
+    "title1 title1"
+    "smalltitle button"
+    "author button";
+    align-items: start;
+    grid-gap: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#review h2 {
+    grid-area: title1;
+}
+
+#review h3 {
+    grid-area: smalltitle;
+}
+
+#review p {
+    grid-area: author;
+}
+
+#review a {
+    grid-area: button;
 }
 
 footer {
@@ -145,6 +404,10 @@ footer {
     padding-top: 2rem;
     padding-bottom: 1rem;
     color: var(--color-cream);
+    background-color: #00000073;
+    margin-left: 5rem;
+    padding-right: 0.5rem;
+    border-radius: 10px;
 }
 
 .authorInfo h2 {

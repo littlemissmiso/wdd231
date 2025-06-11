@@ -122,6 +122,12 @@
         display: block;
     }
 
+    #cards p {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+
     #cards div {
         display: flex;
         padding-top: 1rem;

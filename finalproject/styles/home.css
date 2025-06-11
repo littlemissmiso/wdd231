@@ -257,6 +257,11 @@ main {
     
 }
 
+#cards div {
+        display: flex;
+        padding-top: 1rem;
+}
+
 #cards section p {
     font-family: var(--first-font);
     color: var(--color-cream);

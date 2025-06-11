@@ -78,6 +78,13 @@
     width: auto;
     height: 50px;
 }
+
+.book-cards img {
+    width: 210px;
+    height: auto;
+    
+}
+
 }
 
 @media screen and (max-width: 800px) and (min-width: 640px) {
@@ -89,6 +96,12 @@
 .modal button {
     width: auto;
     height: 50px;
+}
+
+.book-cards img {
+    width: auto;
+    height: 225px;
+    
 }
 
 }

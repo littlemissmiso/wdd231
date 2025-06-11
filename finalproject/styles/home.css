@@ -262,6 +262,12 @@ main {
     color: var(--color-cream);
 }
 
+.review  {
+    justify-self: center; 
+    align-self: center;
+    text-align: center;
+}
+
 .book-cards img {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     height: 275px;
@@ -373,6 +379,18 @@ main {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     justify-items: center;
+}
+
+.genres h2::before {
+    content: "⟫";
+    margin-right: 0.5rem;
+    color: var(--color-cream);
+}
+
+.genres h2::after {
+    content: "⟪";
+    margin-left: 0.5rem;
+    color: var(--color-cream);
 }
 
 

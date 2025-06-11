@@ -1,3 +1,5 @@
+
+
 const cards = document.querySelector('#cards');
 
 function randomizeBooks(array) {
@@ -26,12 +28,14 @@ function displayBooks(books) {
         let bookName = document.createElement('h2');
         let author = document.createElement('p');
         let genre = document.createElement('p');
+        let reviewContainer = document.createElement('div');
         let review = document.createElement('p');
         
         bookImage.setAttribute('src', book.image);
         bookImage.setAttribute('alt', `Image of ${book.name}`);
         bookImage.setAttribute('loading', 'lazy');   
         
+        reviewContainer.classList.add('review');
         bookName.textContent = `${book.name}`;
 
         author.innerHTML = `<strong>Author: </strong>${book.author}`;
@@ -43,7 +47,8 @@ function displayBooks(books) {
         card.appendChild(bookImage);
         card.appendChild(bookName);
         card.appendChild(genre);
-        card.appendChild(review);
+        reviewContainer.appendChild(review);
+        card.appendChild(reviewContainer);
 
         cards.appendChild(card);
         }
@@ -152,8 +157,14 @@ closeButton.addEventListener("click", () => {
 })
 
 
+const hamButton = document.querySelector('#menu');
+const navigation = document.querySelector('.navigation');
 
+hamButton.addEventListener('click', () => {
+    navigation.classList.toggle('active');
+    hamButton.classList.toggle('active');
 
+}); 
 
 
 //Footer Date Function

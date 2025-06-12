@@ -170,6 +170,15 @@
         text-align: center;
     }
 
+    #genre-info {
+        background-color: var(--color-cream);
+        width: 70%;
+        margin: 0 auto;
+        top: 20%;
+        border-radius: 10px;
+        border: 3px solid var(--color-brown);
+    }
+
     footer {
         display: block;
     }
@@ -350,5 +359,9 @@
         top: 20%;
         border-radius: 10px;
         border: 3px solid var(--color-brown);
+    }
+
+    .modal-header h3 {
+        font-size: 25px;
     }
 }

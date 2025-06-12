@@ -42,15 +42,66 @@
                 <div class="book-details">
                    <p id="modal-author"></p>
                    <p id="modal-genre"></p> 
+                   <p id="book-description"></p>
                 </div>
                 <div class="personal-review-title">
                    <p id="two-cents"></p> 
                 </div>
                 <div class="review">
                     <p id="modal-long-review"></p>
-                    <button id="purchase"></button>
+                    <div id="purchase"></div>
                 </div>
         </dialog>
+        <form method="get" action="thankyou.html" class="cf1">
+            <h2>Join Logan Chamber</h2>
+            <fieldset>
+                <div class="fullName">
+                    <h3>Applicant Info</h3>
+                    <label for="first-name">First Name
+                        <input type="text" name="first-name" id="first-name" required title="Enter your first name" autocomplete="given-name">
+                    </label>    
+                    <label for="last-name">Last Name
+                        <input type="text" name="last-name" id="last-name" required title="Enter your last name" autocomplete="family-name">
+                    </label>    
+                    <label for="title">Position Title
+                        <input type="text" name="organizational-title" id="title" required title="Enter your position title" autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}" placeholder="Senior Manager">
+                    </label>
+                    </div>
+                <div class="contactInfo">
+                    <h3>Contact Info</h3>
+                    <label for="email">Email Address
+                        <input type="email" name="email-address" id="email" required title="Enter your email" autocomplete="email" placeholder="youremail@email.com">
+                    </label>
+                    <label for="phone">Phone Number
+                        <input type="tel" name="phone-number" id="phone" required title="Enter your phone number" autocomplete="tel" placeholder="(123) 456-7890">
+                    </label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <div class="business">
+                    <h3>Business Info</h3>
+                    <label for="businessName">Business/Organization Name
+                        <input type="text" name="business-name" id="businessName" required title="Enter the name of your business" autocomplete="organization">
+                    </label>    
+                    <label for="membershipLevel">Membership Level
+                        <select name="membership" id="membershipLevel" required>
+                        <option value="" disabled selected>Select membership...</option>
+                        <option value="np">NP Membership</option>
+                        <option value="bronze">Bronze Membership</option>
+                        <option value="silver">Silver Membership</option>
+                        <option value="gold">Gold Membership</option>
+                        </select>
+                    </label>    
+                    <label for="businessDescription">Business Description
+                        <textarea name="business-description" id="businessDescription" rows="2" cols="50" title="Describe your business/organization"></textarea>
+                    </label>    
+                </div>
+            </fieldset>
+            <fieldset>
+                <input type="submit" value="Send Application">
+                <input type="hidden" name="timestamp" id="timestamp">
+            </fieldset>
+        </form>
     </main>
     <footer>
         <div class="footer-logo">

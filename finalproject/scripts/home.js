@@ -82,7 +82,8 @@ const genreInfo = {
         title: "Coming-of-Age",
         description: "Coming-of-age books follow a young protagonist’s journey to maturity, capturing personal growth, self-discovery, and life’s challenges as they navigate the path from youth to adulthood.",
         books: [
-            { name: "Everything All At Once", author: "Katrina Leno" }
+            { name: "Everything All At Once", author: "Katrina Leno" },
+            { name: "The Inheritance Games", author: "Jennifer Lynn Barnes"}
         ]
     },
     science: {
@@ -117,7 +118,8 @@ const genreInfo = {
         description: "Casual reads are light, engaging, and perfect for relaxation. They offer quick, enjoyable escapes—ideal for busy readers who want comfort, charm, and stress-free storytelling.",
         books: [
             { name: "The Bookshop on the Corner", author: "Jenny Colgan" },
-            { name: "A Man Called Ove", author: "Fredrik Backman" }
+            { name: "A Man Called Ove", author: "Fredrik Backman" },
+            { name: "The Five People You Meet in Heaven", author: "Mitch Albom"}
         ]
     },
     selfhelp: {

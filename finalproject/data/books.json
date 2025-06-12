@@ -121,6 +121,26 @@
       "longreview" : "Book lovers, rejoice! This cozy tale of reinvention and rural charm is as comforting as a cup of tea. Nina is instantly likable, and the Scottish setting feels like a hug. A few plot points feel predictable, but the heart and humor more than make up for it."
     },
     {
+      "name": "The Inheritance Games",
+      "image": "images/inheritance.webp",
+      "author": "Jennifer Lynn Barnes",
+      "genre": "Mystery / Young Adult",
+      "description": "High schooler Avery inherits billions from a stranger—if she can survive the riddles and rivalries of his twisted estate. A clean, fast-paced mystery full of puzzles, secrets, and teen drama.",
+      "review": "⭐⭐⭐⭐",
+      "purchaselink": "https://www.amazon.com/Inheritance-Games-Jennifer-Lynn-Barnes/dp/0759555400",
+      "longreview": "Twisty, clever, and incredibly fun. Avery’s journey into a rich world of secrets and sibling rivalry keeps you hooked from page one. The puzzles are satisfying, the romance light, and the mystery addictive. A few characters are thin, but the momentum never lets up. Great for teens and adults alike."
+    },
+    {
+      "name": "The Five People You Meet in Heaven",
+      "image": "images/fivepeople.webp",
+      "author": "Mitch Albom",
+      "genre": "Casual Read",
+      "description": "After his death, Eddie meets five people who reveal the hidden meaning of his life. A short, moving novel about redemption, purpose, and the quiet beauty of human connections—clean and introspective.",
+      "review": "⭐⭐⭐⭐⭐",
+      "purchaselink": "https://www.amazon.com/Five-People-You-Meet-Heaven/dp/1401308589",
+      "longreview": "Profound and comforting, this story explores life after death with simplicity and heart. Mitch Albom's writing is thoughtful and accessible, and Eddie's journey leaves a lasting impression. Perfect for anyone seeking meaning or solace. It’s short, spiritual, and beautifully told."
+    },
+    {
       "name": "A Man Called Ove",
       "image": "images/ove.webp",
       "author": "Fredrik Backman",

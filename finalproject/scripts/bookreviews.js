@@ -33,9 +33,11 @@ function displayBooks(books) {
             document.getElementById('modal-title').textContent = book.name;
             document.getElementById('modal-author').innerHTML = `<strong>Author:</strong> ${book.author}`;
             document.getElementById('modal-genre').innerHTML = `<strong>Genre:</strong> ${book.genre}`;
+            document.getElementById('book-description').innerHTML = `<strong>Synopsis</strong> ${book.description}`;
             document.getElementById('modal-long-review').innerHTML = book.longreview;
             document.getElementById('two-cents').innerHTML = `Little Miss Miso's Review <br>${book.review}`;
-
+            document.getElementById('purchase').innerHTML = `<a href="${book.purchaselink}" class="purchase-link" target="_blank" rel="noopener noreferrer">Purchase Book<br>(Amazon)</a>`;
+            
             document.getElementById('book-modal').showModal();
         });
 

@@ -34,6 +34,7 @@ header {
     text-align: center;
     padding-bottom: 3.5rem;
     box-shadow: 0 6px 4px -2px rgba(0, 0, 0, 0.3);
+    z-index: 1;
     
 }
 
@@ -99,7 +100,7 @@ h1 {
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
     padding: 1rem 1.5rem;
-    color: var(--color-brown);
+    color: var(--color-cream);
     font-family: var(--third-font);
     text-align: center;
     font-size: 35px;
@@ -108,10 +109,12 @@ h1 {
              0px 18px 23px rgba(0,0,0,0.1);
     letter-spacing: 6px;
     margin-top: 2rem;
-    background-color: var(--color-yellow);
+    background-color: #222c20;
     animation: fadeSlideUp 1s ease-out both;
     align-content: center;
     box-shadow: rgba(0, 0, 0, 0.528) 0px 5px 15px;
+    z-index: 1;
+    position: relative;
 }
 
 @keyframes fadeSlideUp {
@@ -140,7 +143,7 @@ h1 {
 #cards img {
     height: 350px;
     width: auto;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 5px 15px;
     cursor: pointer;
 }
 
@@ -151,9 +154,9 @@ h1 {
 
 #book-modal {
     background-color: var(--color-cream);
-    width: 50%;
+    width: 65%;
     margin: 0 auto;
-    top: 20%;
+    top: 10%;
     border-radius: 10px;
     border: 3px solid var(--color-brown);
 }
@@ -182,7 +185,7 @@ dialog::backdrop {
 
 .book-details p {
     font-family: var(--first-font);
-    font-size: 20px;
+    font-size: 18px;
 }
 
 
@@ -209,25 +212,143 @@ dialog::backdrop {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     margin-bottom: 0.5rem;
+    background-color: #d2d2cd;
 }
 
 .review p {
     font-family: var(--first-font);
     font-size: 18px;
     padding: 1.5rem 2.5rem;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    background-color: #d2d2cd;
+}
+
+.purchase-link {
+    display: block;
+    margin: 0 auto;
+    justify-items: center;
+    background-color: var(--color-yellow);
+    color: black;
+    padding: 0.50rem 2rem;
+    margin-bottom: 1.5rem;
+    margin-top: 1rem;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.528) 0px 5px 15px;
+    font-size: clamp(11px, 1vw, 15px);
+}
+
+.purchase-link:hover {
+    background-color: #e5a74b;
+}
+
+.review div a {
+    text-decoration: none;
+    width: 30%;
+    text-align: center;
+    font-family: var(--third-font);
+
 }
 
 .modal li {
     font-family: var(--first-font);
+    color: white;
+}
+
+form {
+    width: 100%;
+    grid-column: 2/3;
+    margin-top: 2rem;
+    margin-bottom: 3.5rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+
+}
+
+fieldset {
+    background-color: #d6d6cc;
+    border: none;
+    padding: 0;
+}
+
+form h2 {
+    background-color:#394a44;
+    color: var(--color-4);
+    width: 100%;
+    padding: 0.5rem;
+    font-family: var(--second-font);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    text-align: center;
+}
+
+.fullName, .contactInfo, .business {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 1rem;
+    border-top: 1px dotted var(--color-3);
+}
+
+.fullName h3, .contactInfo h3, .business h3 {
+    font-family: var(--second-font);
+}
+
+.fullName label, .contactInfo label, .business label {
+    font-family: var(--main-font);
+}
+
+.business textarea {
+    width: 100%;
+    height: 150px;
+    font-size: 12px;
+    border: none;
+    margin-bottom: 1rem;
 }
 
 
+label[for="membershipLevel"] select {
+    width: 100%;
+    padding: 0.5rem;
+    border: none;
+    margin-bottom: 1rem;
+}
 
-    
 
+label[for="businessName"] input {
+    width: 100%;
+    padding: 0.5rem;
+    border: none;
+    margin-bottom: 1rem;
+}
+
+label[for="first-name"] input, label[for="last-name"] input, label[for="title"] input {
+    width: 100%;
+    padding: 0.5rem;
+    border: none;
+    margin-bottom: 1rem;
+}
+
+label[for="email"] input, label[for="phone"] input {
+    width: 100%;
+    padding: 0.5rem;
+    border: none;
+    margin-bottom: 1rem;
+}
+
+label[for="first-name"], label[for="email"], label[for="businessName"] {
+    margin-top: 1rem;
+}
+
+form input[type="submit"] {
+    border: none;
+    background-color: rgb(68, 93, 65);
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+    padding: .8rem;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 1rem;
+    box-shadow: 1px 1px 4px #999;
+    cursor: pointer;
+}
 
 
 footer {
@@ -290,3 +411,4 @@ footer {
 #menu {
     display: none;
 }
+

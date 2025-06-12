@@ -1,0 +1,19 @@
+@media screen and (max-width: 1200px) and (min-width: 640px) {
+.navigation {
+    width: 70%;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.navigation a {
+    font-size: clamp(15px, 1.75vw, 3rem);
+    text-decoration: none;
+    list-style: none;
+    font-family: var(--first-font);
+    color: var(--color-cream);
+    padding: 1rem;
+}
+
+
+
+}

@@ -113,6 +113,11 @@ main {
     height: auto;
 }
 
+#menu {
+    display: none;
+}
+
+
 .personal-intro {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -292,6 +297,7 @@ main {
     max-width: 620px;
     margin: 2.5rem auto;
     align-self: center;
+    animation: fadeSlideUp 2.75s ease-out both;
 }
 
 #quote h2 {
@@ -352,6 +358,17 @@ main {
 
 #quote p:first-letter {
   margin-left:-12px;
+}
+
+@keyframes fadeSlideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .genres h2 {
@@ -470,11 +487,11 @@ main {
 }
 
 dialog::backdrop {
-    background-color: #171f166a;
+    background-color: #0e130eaf;
 }
 
 .modal-header {
-    font-family: var(--second-font);
+    font-family: var(--third-font);
     display: flex;
     justify-content: space-between;
     color: var(--color-red);

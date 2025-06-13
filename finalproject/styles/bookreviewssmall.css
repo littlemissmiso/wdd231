@@ -84,8 +84,103 @@
         z-index: 0;
     }
 
+    #cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #cards img {
+        height: 225px;
+        width: auto;
+    }
+
+    #book-modal {
+        width: 75%;
+        top: 5%;
+    }
+
+    .modal-header {
+        font-size: 20px;
+    }
+
+    .book-details p {
+        font-size: 16px;
+    }
+
+    .personal-review-title p {
+        padding: 0.5rem 1rem;
+        margin-top: 1rem;
+        font-size: 18px;
+    }
+
+    .review p {
+        font-size: 15px;
+        padding: 1rem 2rem;
+    }
+
+    .purchase-link {
+        display: block;
+        margin: 0 auto;
+        justify-items: center;
+        background-color: var(--color-yellow);
+        color: black;
+        padding: 0.50rem 2rem;
+        margin-bottom: 1.5rem;
+        margin-top: 0.75rem;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.528) 0px 5px 15px;
+        font-size: clamp(11px, 1vw, 15px);
+    }
+
+    .review div a {
+        text-decoration: none;
+        width: 50%;
+        text-align: center;
+        font-family: var(--third-font);
+
+    }
+
+    .bottom-section {
+        display: block;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    form {
+        margin-bottom: 0;
+    }
+
+    #book-quote {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    #reading-images {
+        display: block;
+    }
+
+    #reading-images img {
+        margin-bottom: 1rem;
+    }
+
+    #quote {
+        margin-top: 0.5rem;
+    }
+
+    #form-1 {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    #reading-images img {
+        width: 100%;
+    }
+
+
     footer {
         display: block;
+        padding-top: 1.5rem;
     }
 
     .footer-logo {
@@ -192,6 +287,102 @@
         position: relative;
     }
    
+    #cards {
+        display: block;
+    }
+
+    #cards img {
+        width: 250px;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 1rem;
+    }
+
+    #book-modal {
+        width: 85%;
+        top: 5%;
+    }
+
+    .modal-header {
+        font-size: 20px;
+    }
+
+    .book-details p {
+        font-size: 16px;
+    }
+
+    .personal-review-title p {
+        padding: 0.5rem 1rem;
+        margin-top: 1rem;
+        font-size: 18px;
+    }
+
+    .review p {
+        font-size: 15px;
+        padding: 1rem 2rem;
+    }
+
+    .purchase-link {
+        display: block;
+        margin: 0 auto;
+        justify-items: center;
+        background-color: var(--color-yellow);
+        color: black;
+        padding: 0.50rem 2rem;
+        margin-bottom: 1.5rem;
+        margin-top: 0.75rem;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.528) 0px 5px 15px;
+        font-size: clamp(11px, 1vw, 15px);
+    }
+
+    .review div a {
+        text-decoration: none;
+        width: 70%;
+        text-align: center;
+        font-family: var(--third-font);
+
+    }
+
+    .bottom-section {
+        display: block;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    form {
+        margin-bottom: 0;
+    }
+
+    #book-quote {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    #reading-images {
+        display: block;
+    }
+
+    #reading-images img {
+        margin-bottom: 1rem;
+    }
+
+    #quote {
+        margin-top: 0.5rem;
+    }
+
+    #form-1 {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    #reading-images img {
+        width: 100%;
+    }
+  
 
     footer {
         display: block;

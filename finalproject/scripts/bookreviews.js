@@ -69,6 +69,9 @@ hamButton.addEventListener('click', () => {
 
 }); 
 
+const time = new Date();
+const formattedTime = time.toISOString().slice(0, 19).replace("T", " ");
+document.getElementById('timestamp').value = formattedTime;
 
 //Footer Date Function
 const date = new Date();

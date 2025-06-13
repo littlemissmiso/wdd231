@@ -252,13 +252,18 @@ dialog::backdrop {
     color: white;
 }
 
+.bottom-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1.5rem;
+}
+
 form {
     width: 100%;
     grid-column: 2/3;
     margin-top: 2rem;
     margin-bottom: 3.5rem;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 5px 15px;
 }
 
 fieldset {
@@ -268,76 +273,80 @@ fieldset {
 }
 
 form h2 {
-    background-color:#394a44;
-    color: var(--color-4);
+    background-color: var(--color-yellow);
+    color: black;
     width: 100%;
     padding: 0.5rem;
-    font-family: var(--second-font);
+    font-family: var(--third-font);
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
     text-align: center;
 }
 
-.fullName, .contactInfo, .business {
+.fullName, .genre-selection {
     display: grid;
     grid-template-columns: 1fr;
     padding: 1rem;
-    border-top: 1px dotted var(--color-3);
 }
 
-.fullName h3, .contactInfo h3, .business h3 {
-    font-family: var(--second-font);
+.fullName h3, .genre-selection h3 {
+    font-family: var(--third-font);
+    margin-bottom: 0.5rem;
 }
 
-.fullName label, .contactInfo label, .business label {
-    font-family: var(--main-font);
-}
-
-.business textarea {
-    width: 100%;
-    height: 150px;
-    font-size: 12px;
-    border: none;
+.fullName p {
+    font-family: var(--first-font);
+    font-size: 16px;
+    text-align: center;
     margin-bottom: 1rem;
 }
 
+.fullName label, .genre-selection label {
+    font-family: var(--first-font);
+    font-size: 18px;
+}
 
-label[for="membershipLevel"] select {
+.fullName select {
+    padding: 0.5rem;
+    border: none;
+    background-color: whitesmoke;
+    margin-bottom: 1rem;
+    margin-top: 0.25rem;
+}
+
+label[for="first-name"] input, label[for="last-name"] input, label[for="email"] input {
     width: 100%;
     padding: 0.5rem;
     border: none;
+    margin-top: 0.25rem;
     margin-bottom: 1rem;
 }
 
-
-label[for="businessName"] input {
-    width: 100%;
-    padding: 0.5rem;
-    border: none;
-    margin-bottom: 1rem;
+label[for="email"] input {
+    margin-bottom: 0;
 }
 
-label[for="first-name"] input, label[for="last-name"] input, label[for="title"] input {
-    width: 100%;
-    padding: 0.5rem;
-    border: none;
-    margin-bottom: 1rem;
+.checkboxes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5rem;;
 }
 
-label[for="email"] input, label[for="phone"] input {
-    width: 100%;
-    padding: 0.5rem;
-    border: none;
-    margin-bottom: 1rem;
+.checkboxes label {
+    display: flex;
+    align-items: center;
 }
 
-label[for="first-name"], label[for="email"], label[for="businessName"] {
-    margin-top: 1rem;
+.checkboxes input {
+    margin-right: 0.5rem;
 }
+
 
 form input[type="submit"] {
     border: none;
-    background-color: rgb(68, 93, 65);
+    background-color: #222c20;
     color: #fff;
     font-size: 18px;
     border-radius: 6px;
@@ -349,6 +358,95 @@ form input[type="submit"] {
     box-shadow: 1px 1px 4px #999;
     cursor: pointer;
 }
+
+form input[type="submit"]:hover {
+    background-color: var(--color-dark-green);
+}
+
+#reading-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 2rem;
+    grid-gap: 1rem;
+}
+
+#reading-images img {
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 5px 15px;
+}
+
+.book-quote {
+    height: 100%;
+}
+
+#quote {
+    position: relative;
+    font-family: var(--first-font);
+    max-width: 620px;
+    margin: 2.5rem auto;
+    align-self: center;
+}
+
+#quote h2 {
+    position: relative;
+    color: var(--color-yellow);
+    font-weight: normal;
+    line-height: 1;
+    margin: 0;
+    border: 2px solid #fff;
+    border: solid 2px;
+    border-radius:20px;
+    padding: 25px;
+    font-size: clamp(1.2rem, 6vw, 2.5rem);
+}
+
+#quote h2:after {
+    content:"";
+    position: absolute;
+    border: 2px solid var(--color-yellow);
+    border-radius: 0 100% 0 0;
+    width: 60px;
+    height: 60px;
+    bottom: -62px;
+    left: 50px;
+    border-bottom: none;
+    border-left: none;
+    z-index: 3; 
+}
+
+#quote h2:before {
+    content:"";
+    position: absolute;
+    width: 80px;
+    border: 6px solid var(--color-dark-green);
+    bottom: -3px;
+    left: 50px;
+    z-index: 2;
+    
+}
+
+#quote p {
+    position: relative;
+    color: #ffffff;
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 1.2;
+    margin: 0;
+    padding-top: 15px;
+    z-index: 1;
+    margin-left:150px;
+    padding-left:12px;
+}
+
+#quote p span {
+    font-style: italic;
+    font-size: 18px;
+}
+
+#quote p:first-letter {
+  margin-left:-12px;
+}
+
 
 
 footer {

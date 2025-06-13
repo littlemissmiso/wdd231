@@ -52,56 +52,85 @@
                     <div id="purchase"></div>
                 </div>
         </dialog>
-        <form method="get" action="thankyou.html" class="cf1">
-            <h2>Join Logan Chamber</h2>
-            <fieldset>
-                <div class="fullName">
-                    <h3>Applicant Info</h3>
-                    <label for="first-name">First Name
-                        <input type="text" name="first-name" id="first-name" required title="Enter your first name" autocomplete="given-name">
-                    </label>    
-                    <label for="last-name">Last Name
-                        <input type="text" name="last-name" id="last-name" required title="Enter your last name" autocomplete="family-name">
-                    </label>    
-                    <label for="title">Position Title
-                        <input type="text" name="organizational-title" id="title" required title="Enter your position title" autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}" placeholder="Senior Manager">
-                    </label>
+        <div class="bottom-section">
+            <section id="form-1">
+                    <form method="get" action="thankyou.html" class="cf1">
+                <h2>Monthly Newsletter Sign Up</h2>
+                <fieldset>
+                    <div class="fullName">
+                        <p>Stay up to date with new reviews, book recommendations, and funny snippets from Little Miss Miso! Newsletters are sent the first Monday of each month.</p>
+                        <h3>Contact Info</h3>
+                        <label for="title">Preferred Title:</label>
+                            <select id="title" name="title" required>
+                                <option value="">--Please choose an option--</option>
+                                <option value="mr">Mr</option>
+                                <option value="mrs">Mrs</option>
+                                <option value="miss">Miss</option>
+                                <option value="ms">Ms</option>
+                                <option value="dr">Dr</option>
+                                <option value="other">Other</option>
+                            </select>
+                        <label for="first-name">First Name
+                            <input type="text" name="first-name" id="first-name" required title="Enter your first name" autocomplete="given-name">
+                        </label>    
+                        <label for="last-name">Last Name
+                            <input type="text" name="last-name" id="last-name" required title="Enter your last name" autocomplete="family-name">
+                        </label> 
+                        <label for="email">Email Address
+                            <input type="email" name="email-address" id="email" required title="Enter your email" autocomplete="email" placeholder="youremail@email.com">
+                        </label>   
                     </div>
-                <div class="contactInfo">
-                    <h3>Contact Info</h3>
-                    <label for="email">Email Address
-                        <input type="email" name="email-address" id="email" required title="Enter your email" autocomplete="email" placeholder="youremail@email.com">
-                    </label>
-                    <label for="phone">Phone Number
-                        <input type="tel" name="phone-number" id="phone" required title="Enter your phone number" autocomplete="tel" placeholder="(123) 456-7890">
-                    </label>
-                </div>
-            </fieldset>
-            <fieldset>
-                <div class="business">
-                    <h3>Business Info</h3>
-                    <label for="businessName">Business/Organization Name
-                        <input type="text" name="business-name" id="businessName" required title="Enter the name of your business" autocomplete="organization">
-                    </label>    
-                    <label for="membershipLevel">Membership Level
-                        <select name="membership" id="membershipLevel" required>
-                        <option value="" disabled selected>Select membership...</option>
-                        <option value="np">NP Membership</option>
-                        <option value="bronze">Bronze Membership</option>
-                        <option value="silver">Silver Membership</option>
-                        <option value="gold">Gold Membership</option>
-                        </select>
-                    </label>    
-                    <label for="businessDescription">Business Description
-                        <textarea name="business-description" id="businessDescription" rows="2" cols="50" title="Describe your business/organization"></textarea>
-                    </label>    
-                </div>
-            </fieldset>
-            <fieldset>
-                <input type="submit" value="Send Application">
-                <input type="hidden" name="timestamp" id="timestamp">
-            </fieldset>
-        </form>
+                </fieldset>
+                <fieldset>
+                    <div class="genre-selection">
+                        <h3>What are your favorite genres?</h3>
+                        <div class="checkboxes">
+                            <label>
+                                <input type="checkbox" name="genre" value="romance">Romance
+                            </label>
+                            <label>
+                                <input type="checkbox" name="genre" value="coming-of-age">Coming-of-Age
+                            </label>
+                            <label>
+                                <input type="checkbox" name="genre" value="science-fiction">Science Fiction
+                            </label>
+                            <label>
+                                <input type="checkbox" name="genre" value="fantasy">Fantasy
+                            </label>
+                            <label>
+                                <input type="checkbox" name="genre" value="historical-fiction">Historical Fiction
+                            </label>
+                            <label>
+                                <input type="checkbox" name="genre" value="casual-read">Casual Read
+                            </label>
+                            <label>
+                                <input type="checkbox" name="genre" value="self-help">Self-Help
+                            </label>
+                            <label>
+                                <input type="checkbox" name="genre" value="classics">Classics
+                            </label>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <input type="submit" value="Sign Up">
+                    <input type="hidden" name="timestamp" id="timestamp">
+                </fieldset>
+            </form>
+        </section>    
+        <section id="book-quote">
+            <section id="reading-images">
+              <img src="images/book-ocean.webp" alt="books-by-ocean"> 
+              <img src="images/book-garden.webp" alt="books-by-garden"> 
+            </section>
+            <section id="quote">
+                <h2>“Between the pages of a book is a lovely place to be. You can sail the seven seas, battle dragons, fall in love, or explore the stars—all without ever leaving your chair.”</h2>
+                <p>- Unknown</p>
+            </section>
+            
+        </section>   
+        </div>
+        
     </main>
     <footer>
         <div class="footer-logo">

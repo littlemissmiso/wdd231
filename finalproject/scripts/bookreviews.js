@@ -48,9 +48,17 @@ function displayBooks(books) {
 }
 
 async function getData() {
-    const response = await fetch('data/books.json');
-    const data = await response.json();
-    displayBooks(data.books);
+    try {
+        const response = await fetch('data/books.json');
+        if (!response.ok) {
+            throw new Error(`Unable to retrieve data. Status: ${response.status}`);
+        }
+        const data = await response.json();
+        displayBooks(data.books);
+    } catch (error) {
+        console.error("Unable to fetch/parse book data", error);
+        cards.innerHTML = "<p class='error'>Very sorry, something went wrong trying to load the books.</p>"
+    }   
 }
 
 getData();

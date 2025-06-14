@@ -12,6 +12,7 @@
         position: absolute;
         left: 1.5rem;
         top: 0.5rem;
+        z-index: 10;
         
         
     }
@@ -35,6 +36,7 @@
         border-top-left-radius: 0; 
         visibility: hidden;
         opacity: 0;
+        z-index: 100;
     
     }
 
@@ -44,6 +46,7 @@
         display: block;
         width: 100%;
         text-align: center;
+        padding: 0.5rem 1rem;
     }
 
     .navigation a.active {
@@ -79,6 +82,12 @@
     header {
         padding-bottom: 0;
     }
+
+    h1 {
+        z-index: 0;
+        position: relative;
+    }
+
     .top-section {
         display: block;
     }
@@ -197,7 +206,7 @@
         position: absolute;
         left: 1.5rem;
         top: 0.5rem;
-        
+        z-index: 10;
         
     }
     
@@ -221,7 +230,18 @@
         border-top-left-radius: 0; 
         visibility: hidden;
         opacity: 0;
-    
+        z-index: 100;
+    }
+
+    .navigation a {
+        font-size: clamp(0.5vw, 1.75vw, 3rem);
+        text-decoration: none;
+        list-style: none;
+        font-family: var(--first-font);
+        color: var(--color-cream);
+        padding: 0rem 1rem;
+        background-color: var(--color-red);
+        padding: 0.5rem 1rem;
     }
     
    
@@ -231,6 +251,7 @@
         font-size: clamp(14px, 4vw, 18px);
         display: block;
         width: 100%;
+
         text-align: center;
     }
     
@@ -268,23 +289,37 @@
         display: block;
     }
 
+    h1 {
+        font-size: 25px;
+        z-index: 0;
+        position: relative;
+    }
+
+    .welcome-message p {
+        font-size: 15px;
+    }
+
     .personal-intro img {
         padding: 0;
     }
 
     .personal-intro {
         width: 100%;
-        display: grid;
-        grid-template-areas: 
-        'image image'
-        'title title'
-        'description description'
-        'signature signature';
-        max-height: none;
+        display: block;
+        text-align: center;
+    }
+
+    .personal-intro h2 {
+        text-align: center;
+    }
+
+    .personal-intro p {
+        margin-top: 1rem;
+        margin-bottom: 0.5rem;
     }
 
     .current-read {
-    display: block;
+        display: block;
     }
 
     .current-read img {
@@ -312,6 +347,27 @@
         display: flex;
         padding-top: 1rem;
     }
+
+    #quote h2 {
+   
+        color: var(--color-cream);
+    
+    }
+
+    #quote h2:after {
+        border: 2px solid var(--color-cream);
+        border-radius: 0 100% 0 0;
+        width: 60px;
+        height: 60px;
+        bottom: -62px;
+        left: 50px;
+        border-bottom: none;
+        border-left: none;
+        z-index: 3; 
+    }
+    
+
+
 
     .genre-cards {
         grid-template-columns: 1fr;

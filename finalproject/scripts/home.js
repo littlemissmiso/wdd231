@@ -55,12 +55,50 @@ function displayBooks(books) {
     }
 
 async function getData() {
-    const response = await fetch('data/books.json');
-    const data = await response.json();
-    displayBooks(data.books);
+    try {
+        const response = await fetch('data/books.json');
+        if (!response.ok) {
+            throw new Error(`Unable to retrieve data. Status: ${response.status}`);
+        }
+        const data = await response.json();
+        displayBooks(data.books);
+    } catch (error) {
+        console.error("Unable to fetch/parse book data", error);
+        cards.innerHTML = "<p class='error'>Very sorry, something went wrong trying to load the books.</p>"
+    }   
 }
 
 getData();
+
+const message = document.querySelector('.message');
+const sec_per_day = 1000 * 60 * 60 * 24;
+const lastVisit = localStorage.getItem('lastVisit');
+const now = Date.now();
+
+let welcomeMessage = '';
+
+if (!lastVisit) {
+    welcomeMessage = "Nice to meet you! I'm so excited to share the love of reading!";
+}
+else {
+    const daysDifference = Math.floor((now - Number(lastVisit)) / sec_per_day);
+    
+    if (daysDifference < 1) {
+        welcomeMessage = "It's good to see you again!";
+    }
+    else if (daysDifference === 1) {
+    welcomeMessage = "It's good to see you again! You last visited 1 day ago.";
+    }
+    else {
+        welcomeMessage = `It's good to see you again! You last visited ${daysDifference} days ago.`;
+    }
+}
+
+if (message) {
+    message.textContent = welcomeMessage;
+}
+
+localStorage.setItem('lastVisit', now);
 
 const modal = document.getElementById('genre-info');
 const title = document.getElementById('modal-title');

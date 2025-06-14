@@ -221,7 +221,8 @@ footer {
     list-style: none;
     font-family: var(--first-font);
     color: var(--color-cream);
-    padding: 1rem;
+    background-color: var(--color-red);
+    padding: 0.25rem;
 }
 
 
@@ -271,6 +272,7 @@ footer {
         display: block;
         width: 100%;
         text-align: center;
+        background-color: var(--color-red);
     }
 
     .navigation a.active {

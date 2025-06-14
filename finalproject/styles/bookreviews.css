@@ -314,7 +314,7 @@ form h2 {
     margin-top: 0.25rem;
 }
 
-label[for="first-name"] input, label[for="last-name"] input, label[for="email"] input {
+label[for="first-name"] input, label[for="last-name"] input, label[for="email-address"] input {
     width: 100%;
     padding: 0.5rem;
     border: none;
@@ -322,7 +322,7 @@ label[for="first-name"] input, label[for="last-name"] input, label[for="email"] 
     margin-bottom: 1rem;
 }
 
-label[for="email"] input {
+label[for="email-address"] input {
     margin-bottom: 0;
 }
 

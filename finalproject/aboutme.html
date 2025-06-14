@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project About Me Page</title>
+    <meta name="description" content="This is the Final Project About Me page for McKenna Johnson's WDD 231 class. ">
+    <meta name="author" content="McKenna Johnson">
+    <link rel="stylesheet" href="styles/aboutme.css">
+    <link rel="stylesheet" href="styles/aboutmesmall.css">
+    <script src="scripts/aboutme.js" defer></script>
+    <meta property="og:title" content="Final Project About Me page.">
+    <meta property="og:description" content="McKenna Johnson's BYU-Pathways WDD 231 class Final Project About Me page.">
+    <meta property="og:image" content="https://unsplash.com/photos/a-wooden-table-with-a-book-on-it-in-front-of-a-bookshelf--sbSAIZDB5E">
+    <meta property="og:url" content="https://littlemissmiso.github.io/wdd231/finalproject/aboutme.html">
+    <link rel="icon" href="images/misofavicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Bellefair&family=Young+Serif&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <button id="menu" aria-label="Menu">☰</button>
+        <img src="images/logo.png" alt="logo-image">
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="bookreviews.html" >BOOK REVIEWS</a></li>
+                <li><a href="aboutme.html" class="active">ABOUT ME</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="upper-section">
+            <section id="text-box">
+                <h1>Hi! I'm Little Miss Miso.</h1>
+                <p>Book Reviewer Extraordinaire</p>
+            </section>
+            <img src="images/littlemissmisolibrary.webp" alt="littlemissmiso-library">
+        </div>
+        <div class="middle-section">
+            <section id="life-images">
+                <img src="images/littlemissmisobbq.webp" alt="littlemissmiso-bbq">
+                <img src="images/littlemissmisohike.webp" alt="littlemissmiso-hike">
+                <img src="images/littlemissmisocook.webp" alt="littlemissmiso-cook">
+                <img src="images/littlemissmisocrafts.webp" alt="littlemissmiso-crafts">
+            </section>
+            <section id="life-story">
+                <h2>Hi there!</h2>
+                <br>
+                <p>
+                    I’m Little Miss Miso, a 23-year-old book reviewer, miniature crafter, and cat enthusiast. I created this little corner of the internet to share the things I love most: stories, creativity, and cozy moments.
+                    <br>
+                    <br>
+                    My love of reading started when I was a kid. Books were my safe place—offering adventure, comfort, and connection when I needed it most. Over time, reading became more than just a pastime. It turned into a passion that shaped how I see the world. I started this website to share honest book reviews and help others discover stories that speak to them.
+                    <br>
+                    <br>
+                    When I’m not buried in a book, you’ll usually find me in the kitchen trying new recipes (miso soup is a favorite), crafting tiny dioramas, or heading outdoors for a hike. I also cherish time with my family—whether we’re cooking together, chatting about life, or enjoying quiet weekends, they’ve always been my biggest support.
+                    <br>
+                    <br>
+                    And of course, my cats are always close by—usually snoozing beside me or batting at my craft supplies.
+                    <br>
+                    <br>
+                    Thanks for stopping by—I hope you find something here that connects with you or inspires you for your next adventure!
+                    <br>
+                    <br>
+                    Cheerio,<br>
+                    Little Miss Miso
+                </p>
+            </section>
+        </div>
+        <div class = "middle-2-section">
+                <section id="fact-1">
+                    <h3>Reading Fact 1</h3>
+                    <p>Just 6 minutes of reading can reduce stress by up to 68%, according to a study by the University of Sussex — faster than listening to music or going for a walk!</p>
+                </section>
+                <section id="fact-2">
+                    <h3>Reading Fact 2</h3>
+                    <p>A Yale study found that people who read books regularly live an average of 2 years longer than non-readers. Time to hit the library!</p>
+                </section>
+                <section id="fact-3">
+                    <h3>Reading Fact 3</h3>
+                    <p>Reading fiction — especially character-driven novels — actually boosts your brain’s ability to understand and connect with other people’s feelings.</p>
+                </section>
+                <section id="fact-4">
+                    <h3>Reading Fact 4</h3>
+                    <p>When you read about action, sights, or smells, your brain lights up as if you're experiencing them for real. Reading literally makes your brain simulate the story!</p>
+                </section>
+        </div>
+        <div class = "bottom-section">
+            <form method="get" action="recommendthanks.html" class="cf1">
+                <h2>Recommend Me a Book!</h2>
+                <fieldset>
+                    <div class="form-content">
+                        <p>I'd love to hear all about your favorites! Just keep 'em clean, please!</p>
+                        <h3>Book Information</h3>
+                            <label for="book-name">Book Name
+                                <input type="text" name="book-name" id="book-name" required title="Enter the book title">
+                            </label>
+                            <label for="author-name">Author's Name
+                                <input type="text" name="author-name" id="author-name" required title="Enter the author's name">
+                            </label> 
+                            <label for="book-love">Why do you love this book?</label>
+                            <textarea id="book-love" name="book-love" rows="4" cols="50" placeholder="Type here..."></textarea>
+                        <h3>Contact Info</h3>
+                        <label for="first-name">First Name
+                            <input type="text" name="first-name" id="first-name" required title="Enter your first name" autocomplete="given-name">
+                        </label>    
+                        <label for="last-name">Last Name
+                            <input type="text" name="last-name" id="last-name" required title="Enter your last name" autocomplete="family-name">
+                        </label> 
+                        <label for="email-address">Email Address
+                            <input type="email" name="email-address" id="email-address" required title="Enter your email" autocomplete="email" placeholder="youremail@email.com">
+                        </label>   
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <input type="submit" value="Send Recommendation">
+                    <input type="hidden" name="timestamp" id="timestamp">
+                </fieldset>
+            </form>
+            <div class="books">
+                <div class="life-changing-books">
+                    <div class="book-header">
+                        <h2>Life-Changing Books</h2>
+                        <p>Head over to my Book Reviews page for more details!</p>
+                    </div>
+                    <a href="https://www.amazon.com/Man-Called-Ove-Novel/dp/1476738025" target="_blank" rel="noopener noreferrer">
+                        <img src="images/ove.webp" alt="A Man Called Ove Book">
+                    </a>
+                    <a href="https://www.amazon.com/Everything-All-Once-Katrina-Leno/dp/0062493094" target="_blank" rel="noopener noreferrer">
+                        <img src="images/everything.webp" alt="Everything All At Once Book">
+                    </a>
+                    <a href="https://www.amazon.com/Warcross-Marie-Lu/dp/0399547967" target="_blank" rel="noopener noreferrer">
+                        <img src="images/warcross.webp" alt="Warcross Book">
+                    </a>
+                    <a href="https://www.amazon.com/Aurora-Rising-Cycle-Amie-Kaufman/dp/1524720968" target="_blank" rel="noopener noreferrer">
+                        <img src="images/aurorarising.webp" alt="Aurora Rising Book">
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        
+    </main>
+    <footer>
+        <div class="footer-logo">
+            <img src="images/logo-small.png" alt="small-logo">
+        </div>
+        <div class="socialMedia">
+            <a href="https://youtube.com">
+                <img src="images/youtube.png" alt="Youtube" class="youtube-logo">
+            </a>
+            <a href="https://twitter.com">
+                <img src="images/twitter.png" alt="Twitter" class="twitter-logo">
+            </a>
+            <a href="https://instagram.com">
+                <img src="images/instagram.png" alt="Instagram" class="instagram-logo">
+            </a>
+        </div>
+        <div class="authorInfo">
+            <h2>WDD 231 Class Final Project</h2>
+            <p>Author: McKenna Johnson</p>
+            <p>&copy;<span id="year"></span> The Literary Loft with Little Miss Miso</p>
+            <div class="modified">
+                <p>Last modification: <span id=lastModified></span></p>
+            </div>
+        </div>
+        
+    </footer>
+</body>
+</html>

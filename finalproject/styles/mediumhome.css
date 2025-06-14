@@ -1,12 +1,15 @@
 @media screen and (max-width: 1200px) and (min-width: 640px) {
     
-    /*Make sure to update the menu to hamburger!!*/
+#menu {
+    z-index: 10;
+}
 
 
 .navigation {
     width: 70%;
     justify-content: center;
     justify-content: space-around;
+    z-index: 100;
 }
 
 .navigation a {
@@ -15,7 +18,14 @@
     list-style: none;
     font-family: var(--first-font);
     color: var(--color-cream);
-    padding: 1rem;
+    padding: 0;
+    background-color: var(--color-red);
+    padding: 0.5rem 1rem;
+}
+
+h1 {
+    z-index: 0;
+    position: relative;
 }
 
 .personal-intro img {

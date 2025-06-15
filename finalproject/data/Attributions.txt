@@ -1,0 +1,9 @@
+Attributions: 
+
+Styling of the 'quote' was used from https://freefrontend.com/css-blockquotes/
+
+Book images are from Google images.
+
+Little Miss Miso images were created by https://perchance.org/ai-text-to-image-generator. 
+
+Large general text areas were written by ChatGPT to save on time. 
